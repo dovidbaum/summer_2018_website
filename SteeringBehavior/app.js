@@ -1,5 +1,5 @@
 let font;
-let fontSize = 150;
+let fontSize = 120;
 let line1 = [];
 let line2 = [];
 let line3 = [];
@@ -20,9 +20,9 @@ function preload() {
 
 function setup(){
     let canvas = createCanvas(100,900); // customize this so it fits screen nicely
-    canvas.parent('text-holder')
+    canvas.parent('text-holder'); //this attaches the canvas to a parent div
     clear()  //uncomment this to make background clear
- //  background(255);
+  // background(255);
 
     showText();
    // welcome();
@@ -31,7 +31,7 @@ function setup(){
 
 function draw(){
     clear() //uncomment this to make background clear
- //   background(51);
+  //  background(51);
 
     for(let i=0; i<line1.length;i++) {
         let v = line1[i];
@@ -51,6 +51,37 @@ function draw(){
         v.update();
         v.show();
     }
+    for(let i=0; i<line4.length;i++) {
+        let v = line4[i];
+        v.behaviors();
+        v.update();
+        v.show();
+    }
+    for(let i=0; i<line5.length;i++) {
+        let v = line5[i];
+        v.behaviors();
+        v.update();
+        v.show();
+    }
+    for(let i=0; i<line6.length;i++) {
+        let v = line6[i];
+        v.behaviors();
+        v.update();
+        v.show();
+    }
+    for(let i=0; i<line7.length;i++) {
+        let v = line7[i];
+        v.behaviors();
+        v.update();
+        v.show();
+    }
+    for(let i=0; i<line8.length;i++) {
+        let v = line8[i];
+        v.behaviors();
+        v.update();
+        v.show();
+    }
+
 
 
 
@@ -61,7 +92,7 @@ function showText(){
     let vehicle;
     // converts font into an object and converts font to points.
     //(txt, x, y, fontSize, options)
-    let points1 = font.textToPoints("w" ,0,200,fontSize);
+    let points1 = font.textToPoints("w" ,0,90,fontSize);
     for(let i=0; i<points1.length;i++) {
         pt = points1[i];
         vehicle = new Vehicle(pt.x, pt.y);
@@ -69,15 +100,45 @@ function showText(){
     }
 
     // converts font into an object and converts font to points.
-   let points2 = font.textToPoints("e" ,0,300,fontSize);
+   let points2 = font.textToPoints("e" ,0,190,fontSize);
     for(let i=0; i<points2.length;i++) {
         pt = points2[i];
         vehicle = new Vehicle(pt.x, pt.y);
         line2.push(vehicle);
     }
-    let points3 = font.textToPoints("l" ,20,450,fontSize);
+    let points3 = font.textToPoints("l" ,20,325,fontSize);
     for(let i=0; i<points3.length;i++) {
         pt = points3[i];
+        vehicle = new Vehicle(pt.x, pt.y);
+        line3.push(vehicle);
+    }
+    let points4 = font.textToPoints("c" ,0,425,fontSize);
+    for(let i=0; i<points4.length;i++) {
+        pt = points4[i];
+        vehicle = new Vehicle(pt.x, pt.y);
+        line3.push(vehicle);
+    }
+    let points5 = font.textToPoints("o" ,0,525,fontSize);
+    for(let i=0; i<points5.length;i++) {
+        pt = points5[i];
+        vehicle = new Vehicle(pt.x, pt.y);
+        line3.push(vehicle);
+    }
+    let points6 = font.textToPoints("m" ,0,625,fontSize);
+    for(let i=0; i<points6.length;i++) {
+        pt = points6[i];
+        vehicle = new Vehicle(pt.x, pt.y);
+        line3.push(vehicle);
+    }
+    let points7 = font.textToPoints("e" ,0,725,fontSize);
+    for(let i=0; i<points7.length;i++) {
+        pt = points7[i];
+        vehicle = new Vehicle(pt.x, pt.y);
+        line3.push(vehicle);
+    }
+    let points8 = font.textToPoints("!" ,20,870,fontSize);
+    for(let i=0; i<points8.length;i++) {
+        pt = points8[i];
         vehicle = new Vehicle(pt.x, pt.y);
         line3.push(vehicle);
     }
@@ -87,7 +148,7 @@ function showText(){
 
 
 function windowResized() {
-    resizeCanvas(windowWidth/2, windowHeight/2);
+    resizeCanvas(75,height);
 }
 
 /*

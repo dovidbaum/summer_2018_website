@@ -56,37 +56,37 @@
             </div>
         </div>
     </nav>
-
-    <!-- Intro Section -->
-    <div class="view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('SteeringBehavior/images/blackboardBackground.jpg');background-size: cover;background-position: center";>
-        <div class="full-bg-img">
-            <div class="container flex-center"
-                <div class="row pt-5 mt-3">
-                    <div class="col-md-12">
-                        <div id="text-holder" class="well well-sm col-xs-4 col-md-6 col-lg-6" ></div>
-
-                        <!--
-                         <div class="text-center">
-                             <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Minimalist intro</strong></h1>
-                             <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-                             <h5 class="text-uppercase mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Photography & design</strong></h5>
-                             <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">portfolio</a>
-                             <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a>
-                         </div>
-                         -->
-                    </div>
-                </div>
+    <!-- Canvas -->
+    <div class="container position-absolute" style="z-index: 1">
+        <div class="row pt-3 mt-3">
+            <div class="col-12 offset-2">
+         <div id="text-holder"></div>
             </div>
         </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="view hm-black-light jarallax position-relative"
+         style="background-image: url('SteeringBehavior/images/blackboardBackground.jpg');background-size:
+         cover;background-position: center; z-index: 0";>
+    <div class="full-bg-img">
+      <!--  <div class="container">
+        <div class="row pt-5 mt-3">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+        </div> -->
+    </div>
     </div>
 
 </header>
 <!--Main Navigation-->
 
 <!--Main Layout-->
-<main>
+<main style="background-color: gray">
 
-    <div class="container">
+    <div class="container position-relative" style="z-index: 2">
 
         <!--Grid row-->
         <div class="row py-5 mt-4">
@@ -94,7 +94,7 @@
             <!--Grid column-->
             <div class="col-md-12 text-center">
 
-                <p>This will be a note on what servieces I can offer... Lorem ipsum dolor sit amet,
+                <p style="color: greenyellow; clear: both">This will be a note on what servieces I can offer... Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
