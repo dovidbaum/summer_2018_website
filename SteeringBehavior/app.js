@@ -1,5 +1,5 @@
 let font;
-let fontSize = 120;
+let fontSize = 100;
 let line1 = [];
 let line2 = [];
 let line3 = [];
@@ -22,7 +22,7 @@ function setup(){
     let canvas = createCanvas(100,900); // customize this so it fits screen nicely
     canvas.parent('text-holder'); //this attaches the canvas to a parent div
     clear()  //uncomment this to make background clear
-  // background(255);
+ //  background(255);
 
     showText();
    // welcome();
@@ -92,7 +92,7 @@ function showText(){
     let vehicle;
     // converts font into an object and converts font to points.
     //(txt, x, y, fontSize, options)
-    let points1 = font.textToPoints("w" ,0,90,fontSize);
+    let points1 = font.textToPoints("w" ,6,90,fontSize);
     for(let i=0; i<points1.length;i++) {
         pt = points1[i];
         vehicle = new Vehicle(pt.x, pt.y);
@@ -100,7 +100,7 @@ function showText(){
     }
 
     // converts font into an object and converts font to points.
-   let points2 = font.textToPoints("e" ,0,190,fontSize);
+   let points2 = font.textToPoints("e" ,6,190,fontSize);
     for(let i=0; i<points2.length;i++) {
         pt = points2[i];
         vehicle = new Vehicle(pt.x, pt.y);
@@ -112,25 +112,25 @@ function showText(){
         vehicle = new Vehicle(pt.x, pt.y);
         line3.push(vehicle);
     }
-    let points4 = font.textToPoints("c" ,0,425,fontSize);
+    let points4 = font.textToPoints("c" ,6,425,fontSize);
     for(let i=0; i<points4.length;i++) {
         pt = points4[i];
         vehicle = new Vehicle(pt.x, pt.y);
         line3.push(vehicle);
     }
-    let points5 = font.textToPoints("o" ,0,525,fontSize);
+    let points5 = font.textToPoints("o" ,6,525,fontSize);
     for(let i=0; i<points5.length;i++) {
         pt = points5[i];
         vehicle = new Vehicle(pt.x, pt.y);
         line3.push(vehicle);
     }
-    let points6 = font.textToPoints("m" ,0,625,fontSize);
+    let points6 = font.textToPoints("m" ,6,625,fontSize);
     for(let i=0; i<points6.length;i++) {
         pt = points6[i];
         vehicle = new Vehicle(pt.x, pt.y);
         line3.push(vehicle);
     }
-    let points7 = font.textToPoints("e" ,0,725,fontSize);
+    let points7 = font.textToPoints("e" ,6,725,fontSize);
     for(let i=0; i<points7.length;i++) {
         pt = points7[i];
         vehicle = new Vehicle(pt.x, pt.y);
