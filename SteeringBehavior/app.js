@@ -148,7 +148,7 @@ function showText(){
 
 
 function windowResized() {
-    resizeCanvas(75,height);
+    resizeCanvas(150,900);
 }
 
 /*

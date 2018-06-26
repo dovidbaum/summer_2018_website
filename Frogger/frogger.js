@@ -36,7 +36,7 @@ function resetGame(){
 }
 
 function setup(){
-    let canvas = createCanvas(500, 550);
+    let canvas = createCanvas(400, 550);
     canvas.parent('sketch-holder')
     resetGame();
  //   totalLanes = int(height/grid);
@@ -96,3 +96,7 @@ window.addEventListener("keyup", function(e) {
         e.preventDefault(); // prevents the "default" action from happening, in this case, scrolling down.
     }
 }, false);
+
+function windowResized() {
+    resizeCanvas(400,550);
+}
