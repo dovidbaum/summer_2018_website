@@ -1,10 +1,11 @@
 /*my own CSS here */
 .top-nav-collapse {
-    background-color: #78909c !important;
+    background-color: #262626 !important;
 }
 .navbar:not(.top-nav-collapse) {
     background: transparent !important;
 }
+
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
         background: #78909c !important;
@@ -32,8 +33,7 @@ h5 {
 
 /*css for canvas */
 body {
-    padding: 0;
-    margin: 0;
+    overflow-x: hidden; /* The navbar was wider than the screen, this seems to be the fix */
 }
 
 canvas {
