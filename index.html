@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Dovid Baum's Portfolia - 2018</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -18,20 +18,19 @@
 
 </head>
 
-<body style="background-image: url('SteeringBehavior/images/blackboardBackground.jpg');">
+<body style="background-image: url('SteeringBehavior/images/blackboardBackground.jpg');background-size: 100% 160%;">
 
-<!-- Start your project here-->
 <!--Main Navigation-->
 <header>
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#"><strong>Dovid Baum</strong></a>
-            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6" aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -60,7 +59,7 @@
     <!-- Canvas -->
     <div class="container position-absolute" style="z-index: 1">
         <div class="row pt-3 mt-3">
-            <div class="col-12 offset-2">
+            <div class="col-10 offset-2">
          <div id="text-holder"></div>
             </div>
         </div>
@@ -74,7 +73,7 @@
     <div class="container">
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <button onclick="myFunction()"  id="about" type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-question-sign"></span> about the website</button>
+        <button onclick="myFunction()"  data-toggle="collapse" href="#myDIV"  id="about" type="button" class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-question-sign" ></span> about the website</button>
 
     </div>
 
@@ -83,7 +82,7 @@
 <!--Main Navigation-->
 
 <!--Main Layout-->
-<main style="background-color:#d1b58e; display: none" id="myDIV">
+<main class="collapse"  style="background-color:#d1b58e; display: none" id="myDIV">
 
     <div class="container position-relative" style="z-index: 1" >
 
@@ -213,16 +212,18 @@
     // Animations init
   //  new WOW().init();
 function myFunction() {
-    console.log("heeeeeere");
     let x = document.getElementById("myDIV");
     let button = document.getElementById("about");
     if (x.style.display === "none") {
         x.style.display = "block";
         button.innerHTML = "hide about";
+      //  x.className = "animated fadeInLeft";
     } else {
+      //  x.className = "animated rotateOut"
         x.style.display = "none";
         //change button text
-        button.innerHTML = "about the website"
+        button.innerHTML = "about the website";
+
 
     }
 }

@@ -1,14 +1,17 @@
 /*my own CSS here */
 .top-nav-collapse {
     background-color: #262626 !important;
+    overflow-x: hidden;
 }
 .navbar:not(.top-nav-collapse) {
     background: transparent !important;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #78909c !important;
+        background: #262626 !important;
+        overflow-x: hidden;
     }
 }
 h1 {

@@ -36,7 +36,7 @@ function resetGame(){
 }
 
 function setup(){
-    let canvas = createCanvas(400, 550);
+    let canvas = createCanvas(windowWidth/2,550);
     canvas.parent('sketch-holder')
     resetGame();
  //   totalLanes = int(height/grid);
@@ -98,5 +98,5 @@ window.addEventListener("keyup", function(e) {
 }, false);
 
 function windowResized() {
-    resizeCanvas(400,550);
+    resizeCanvas(windowWidth/2,550);
 }
