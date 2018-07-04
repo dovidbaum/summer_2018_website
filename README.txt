@@ -6,6 +6,8 @@ index Page:
 Frogger Game:
     I give credit to 'The Coding Train' for the inspiration for this game.
     A youtube video explaining how to setup the game can be found here: https://www.youtube.com/watch?v=giXV6xErw0Y
+
+    Animation from Tig: https://www.youtube.com/watch?v=PziMfEwXY6o
 Spotify API:
     I give credit to:
     MPJ's channel on programming Fun Fun Function is great  - https://www.youtube.com/funfunfunction
@@ -15,15 +17,6 @@ Spotify API:
     Travis - http://www.travandlos.com/
 
     A youtube video explaining how to setup the App can be found here: https://www.youtube.com/watch?v=rzk8n-4gMWs
-
-
-
-]
-
-
-
-
-
 
 Material Design for Bootstrap
 
