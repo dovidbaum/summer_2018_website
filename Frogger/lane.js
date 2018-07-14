@@ -92,11 +92,15 @@ class Lane extends Rectangle {
             rect(this.x, this.y, this.w, this.h);
             image(oceanImage,this.x,this.y,width,50);
 
-        }else{
-            fill('#56b000');
+        }else if(this.type === SAFETY) {
             rect(this.x, this.y, this.w, this.h);
             image(grassImage,this.x,this.y,width,50);
-
+        }else{
+            fill('light green');
+            rect(this.x, this.y, this.w, this.h);
+      //      for(let i = 0; i<12;i++) {
+        //        image(finishLineImages[i], i*50, this.y, 50, 50);
+         //   }
         }
         //fill lane with obstacles
         for (let o of this.obstacles) {
