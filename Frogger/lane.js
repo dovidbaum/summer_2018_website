@@ -47,15 +47,7 @@ class Lane extends Rectangle {
             }
             this.obstacles[i] = new Obstacle(offset + spacing * i, index * grid, grid, grid, speed,type,img,this.direction);
         }
-        /*set the color of the lane */
-        if(this.type == CAR){
-           // this.col = color('#365c9c');
-        //  image(roadImage, 0, 0);
-        }else if(this.type == LOG){
-          //  this.col = color('#0066cc');
-        }else{
-            this.col = color('#56b000');
-        }
+
 
 
     }
@@ -82,7 +74,9 @@ class Lane extends Rectangle {
                     resetGame();
                 }
             } else if (this.type == SAFETY) {
-                this.col = color('red');
+
+            }else{ //else this.type == FINISH
+
             }
         }
 

@@ -2,12 +2,24 @@ let grid = 50;
 const SAFETY = 0;
 const CAR = 1;
 const LOG = 2;
+const FINISH = 3;
+var gameFinished = false;
 let lanes  = [];   //height/width is how many lanes you need
 let frog;
 let roadImagestoLeft = [];
 let roadImagestoRight = [];
 let oceanImagestoLeft = [];
 let oceanImagestoRight = [];
+let canvas;
+let gameState;
+const PLAYING = 0;
+const GAMEOVERMENU = 1;
+let level;
+let waitingForUser;
+let replayLevel;
+let nextLevel;
+let restartGame;
+let howToPlay;
 
 
 function preload(){
@@ -31,23 +43,28 @@ function preload(){
 }
 
 function resetGame(){
-    frog = new Frog((width/2)-grid/2, height-grid, grid);
+    frog = new Frog((width/2)-grid/2, height-grid, grid);  // start frog at the beginning
     frog.attach(null);
 }
 
 function setup(){
-    let canvas = createCanvas(windowWidth/2,550);
-    canvas.parent('sketch-holder')
+    //initially game will be setup at level 1
+    gameState = PLAYING;  // change manually to test different states: GAMEOVERMENU or PLAYING
+    level = 1;
+    waitingForUser = false;
+    canvas = createCanvas(windowWidth/2,550);
+    canvas.id("froggerCanvas");
+    canvas.parent('sketch-holder');
     resetGame();
- //   totalLanes = int(height/grid);
- //   lanes = lane[totalLanes];
+    setupGame();
 
-    //for(int i= 0; i< totalLanes; i++){
-    //  lanes[i] = new Lane(i*grid,3,2,200);
-    //}
+
+}
+
+function setupGame() {
 
     //for demonstration purposes manually create each lane
-    lanes[0] = new Lane(0, SAFETY, 0, 0, 0, 0);  //this is the most top row
+    lanes[0] = new Lane(0, FINISH, 0, 0, 0, 0);  //this is the most top row
     lanes[1] = new Lane(1, LOG, 3, 1, 150, 3);
     lanes[2] = new Lane(2, LOG, 2, 3, 350, -2.5);
     lanes[3] = new Lane(3, LOG, 4, 1, 250, 1);
@@ -58,20 +75,55 @@ function setup(){
     lanes[8] = new Lane(8, CAR, 1,1, 150, 2.3);
     lanes[9] = new Lane(9, CAR, 3, 1, 150,-1); //index, type, number of vehicles, len, spacing, speed
     lanes[10] = new Lane(10, SAFETY, 0, 0, 0, 0);   //this is the most bottom row
-
-
 }
 
 function draw(){
-    background('#222222');
-    fill(255, 100);
-    for(let lane of lanes){
-        lane.run();
+    if(!waitingForUser) {
+        if (gameState == PLAYING) {
+            fill(255, 100);
+            for (let lane of lanes) {
+                lane.run();
+            }
+            let laneIndex = int(frog.y / grid);
+            lanes[laneIndex].check(frog); //only check the lane in which the frog is in
+            frog.update();
+            frog.show(); //draw the frog last
+            if (laneIndex === 0) { //0 is the FINISH cause it's "backwards"
+                console.log("finished 2");
+                // clear();
+                gameState = GAMEOVERMENU;
+            }
+        } else if (gameState == GAMEOVERMENU) {
+            if(!waitingForUser) {
+                waitingForUser == true;
+                background('#222222');
+                fill("green");
+                textSize(55);
+                text('You Win!', ((windowWidth / 2) / 2) - 100, (550 / 2) - 150);
+                if (!replayLevel) {
+                    replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) - 100));
+                }
+                if (!nextLevel) {
+                    nextLevel = createGameOverMenuButton("Next Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) - 50));
+                }
+                if (!restartGame) {
+                    restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2)));
+                }
+                if (!howToPlay) {
+                    howToPlay = createGameOverMenuButton("How to Play", (((windowWidth / 2) / 2) - 50), ((550 / 2)) + 50);
+                }
+            }
+
+
+            // have a go to level n (increments each time)
+            //pause game
+            replayLevel.mousePressed(replay);
+            nextLevel.mousePressed(next);
+            restartGame.mousePressed(restart);
+            howToPlay.mousePressed(instructions);
+        }
     }
-    let laneIndex = int(frog.y/grid);
-    lanes[laneIndex].check(frog); //only check the lane in which the frog is in
-    frog.update();
-    frog.show(); //draw the frog last
+
 }
 
 function keyPressed(){
@@ -99,4 +151,42 @@ window.addEventListener("keyup", function(e) {
 
 function windowResized() {
     resizeCanvas(windowWidth/2,550);
+}
+
+
+function createGameOverMenuButton(buttonName,posX,posY) {
+    let button = createButton(buttonName);
+    button.id(buttonName)
+    button.parent("sketch-holder");
+    //document.getElementById(buttonName).style.background='#000000';
+    button.size(150);
+    button.position(posX,posY); //position in the middle of canvas
+    return button;
+}
+ function replay() {
+     console.log("replayLevel pressed");
+ }
+function next() {
+    console.log("nextLevel pressed");
+    // clear the gameOverMenu
+    clearGameOverMenu();
+    // setup next level
+    setup();
+
+}
+function restart() {
+    console.log("restart pressed");
+}
+function instructions() {
+    console.log("instructions pressed");
+}
+function clearGameOverMenu() {
+    console.log("clearing GameOver menu...")
+    replayLevel.remove();
+    nextLevel.remove();
+    restartGame.remove();
+    howToPlay.remove();
+
+
+
 }
