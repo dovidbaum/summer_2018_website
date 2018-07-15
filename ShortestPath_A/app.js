@@ -1,4 +1,4 @@
-    let columns = 50;
+    let columns = 50;  //50
     let rows = 50;
     let grid  = new Array(columns);
     let openSet = [];

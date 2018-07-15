@@ -98,9 +98,7 @@ class Lane extends Rectangle {
         }else{
             fill('light green');
             rect(this.x, this.y, this.w, this.h);
-      //      for(let i = 0; i<12;i++) {
-        //        image(finishLineImages[i], i*50, this.y, 50, 50);
-         //   }
+             image(finishLine, this.x, this.y, width, 60);
         }
         //fill lane with obstacles
         for (let o of this.obstacles) {

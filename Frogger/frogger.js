@@ -3,14 +3,12 @@ const SAFETY = 0;
 const CAR = 1;
 const LOG = 2;
 const FINISH = 3;
-var gameFinished = false;
 let lanes = [];   //height/width is how many lanes you need
 let frog;
 let roadImagestoLeft = [];
 let roadImagestoRight = [];
 let oceanImagestoLeft = [];
 let oceanImagestoRight = [];
-let finishLineImages = [];
 let canvas;
 let gameState;
 const PLAYING = 0;
@@ -26,7 +24,9 @@ const finalLevel = 5;
 
 
 function preload() {
-    frogImage = loadImage('Frogger/images/frog.png');
+  //  frogImage = loadImage('Frogger/images/frog.png');
+    frogImage = loadImage('Frogger/images/frog2.png');
+
     // load road images
     for (let i = 0; i <= 11; i++) {
         roadImagestoLeft[i] = loadImage('Frogger/images/RoadImages/toLeft/' + i + '.png');
@@ -37,18 +37,10 @@ function preload() {
         oceanImagestoLeft[i] = loadImage('Frogger/images/OceanImages/toLeft/' + i + '.png');
         oceanImagestoRight[i] = loadImage('Frogger/images/OceanImages/toRight/' + i + '.png');
     }
-    // load finish line images
-   // for (let i = 0; i <= 11; i++) {
-      //  finishLineImages[i] =  loadImage("Frogger/images/finishLineImages/"+ i +".png");
-   // }
-  //  finishLineImages[11] = finishLineImages[0];
-
-
-
     roadImage = loadImage('Frogger/images/RoadImages/road.png');
     oceanImage = loadImage('Frogger/images/OceanImages/sea.png');
     grassImage = loadImage('Frogger/images/grass.jpg');
-    finishLine = loadImage('Frogger/images/finishLine.jpg');
+    finishLine = loadImage('Frogger/images/checkered.jpg');
 }
 
 function resetGame() {
@@ -114,23 +106,21 @@ function draw() {
             if (!waitingForUser) { // ensures buttons are only created once
                 waitingForUser = true;
                 background('#222222');
-                fill("green");
+                fill("#86f73b");
                 textSize(55);
                 text('You Beat Level ' + level + "!", ((windowWidth / 2) / 2) - 200, (550 / 2) - 150);
                 replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) - 100));
                 nextLevel = createGameOverMenuButton("Next Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) - 50));
                 restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2)));
-                howToPlay = createGameOverMenuButton("How to Play", (((windowWidth / 2) / 2) - 50), ((550 / 2)) + 50);
             }
             replayLevel.mousePressed(replay);
             nextLevel.mousePressed(next);
             restartGame.mousePressed(restart);
-            howToPlay.mousePressed(instructions);
         } else if (gameState == YOUWIN){
             if (!waitingForUser) { // ensures buttons are only created once
                 waitingForUser = true;
                 background('#222222');
-                fill("#47FF33");
+                fill("#21c4e6");
                 textSize(100);
                 text('You',((windowWidth / 2) / 2) - 100, (550 / 2) - 150);
                 text('Win!',((windowWidth / 2) / 2) - 100, (550 / 2));
@@ -169,7 +159,7 @@ window.addEventListener("keyup", function (e) {
 }, false);
 
 function windowResized() {
-    resizeCanvas(windowWidth / 2, 550);
+    resizeCanvas(windowWidth/2, 550);
 }
 
 
@@ -180,9 +170,11 @@ function createGameOverMenuButton(buttonName, posX, posY) {
     //document.getElementById(buttonName).style.background='#000000';
     button.size(150);
     button.position(posX, posY); //position in the middle of canvas
-    button.style("border", "2px solid red");
+    button.style("border", "2px solid #f74c3b");
     button.style("padding","10px");
     button.style("border-radius","50px 20px");
+    button.style("background","#eae8e8");
+ //   button.style("color","#21c4e6");
     return button;
 }
 
@@ -200,7 +192,7 @@ function next() {
 
 function restart() {
     clearGameOverMenu(); // clear the gameOverMenu
-    level == 1; //start at first level
+    level = 1; //start at first level
     setup(); // setup next level
 }
 
@@ -210,18 +202,26 @@ function instructions() {
 
 function clearGameOverMenu() {
     console.log("clearing GameOver menu...")
-    replayLevel.remove();
-    nextLevel.remove();
-    restartGame.remove();
-    howToPlay.remove();
+    if(replayLevel) {
+        replayLevel.remove();
+    }
+    if(nextLevel) {
+        nextLevel.remove();
+    }
+    if(restartGame) {
+        restartGame.remove();
+    }
+    if(howToPlay) {
+        howToPlay.remove();
+    }
 }
 
 function setUpLevel1() {
     lanes[0] = new Lane(0, FINISH, 0, 0, 0, 0);  //this is the most top row
     lanes[1] = new Lane(1, LOG, 4, 1, 150, 3);
     lanes[2] = new Lane(2, LOG, 3, 1, 350, -2.5);
-    lanes[3] = new Lane(3, LOG, 5, 1, 250, 1);
-    lanes[4] = new Lane(4, LOG, 4, 22, 100, -1.7);  // bottom most ocean row
+    lanes[3] = new Lane(3, LOG, 5, 1, 250, 1.1);
+    lanes[4] = new Lane(4, LOG, 4, 1, 200, -1.7);  // bottom most ocean row
     lanes[5] = new Lane(5, SAFETY, 0, 0, 0, 0);
     lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.4); //
     lanes[7] = new Lane(7, CAR, 2, 1, 150, -3.6);
@@ -235,8 +235,8 @@ function setUpLevel2() {
     lanes[0] = new Lane(0, FINISH, 0, 0, 0, 0);  //this is the most top row
     lanes[1] = new Lane(1, LOG, 4, 1, 150, 3.5);
     lanes[2] = new Lane(2, LOG, 3, 1, 350, -3);
-    lanes[3] = new Lane(3, LOG, 5, 1, 250, 1.5);
-    lanes[4] = new Lane(4, LOG, 4, 22, 100, -2.2);  // bottom most ocean row
+    lanes[3] = new Lane(3, LOG, 5, 1, 250, 1.6);
+    lanes[4] = new Lane(4, LOG, 4, 1, 200, -2.2);  // bottom most ocean row
     lanes[5] = new Lane(5, SAFETY, 0, 0, 0, 0);
     lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.9); //
     lanes[7] = new Lane(7, CAR, 2, 1, 150, -4.1);
@@ -249,8 +249,8 @@ function setUpLevel3() {
     lanes[0] = new Lane(0, FINISH, 0, 0, 0, 0);  //this is the most top row
     lanes[1] = new Lane(1, LOG, 3, 1, 130, 4);
     lanes[2] = new Lane(2, LOG, 2, 1, 300, -3.5);
-    lanes[3] = new Lane(3, LOG, 3, 1, 230, 2);
-    lanes[4] = new Lane(4, LOG, 3, 22, 100, -2.6);  // bottom most ocean row
+    lanes[3] = new Lane(3, LOG, 3, 1, 230, 2.2);
+    lanes[4] = new Lane(4, LOG, 3, 1, 200, -2.6);  // bottom most ocean row
     lanes[5] = new Lane(5, SAFETY, 0, 0, 0, 0);
     lanes[6] = new Lane(6, CAR, 4, 1, 120, 3.9); //
     lanes[7] = new Lane(7, CAR, 3, 1, 120, -4.6);
@@ -263,28 +263,28 @@ function setUpLevel3() {
 //level 4 game gets harder by decreasing car space and increasing boat space (and speed and number a little bit)
 function setUpLevel4() {
     lanes[0] = new Lane(0, FINISH, 0, 0, 0, 0);  //this is the most top row
-    lanes[1] = new Lane(1, LOG, 4, 1, 150, 3);
-    lanes[2] = new Lane(2, LOG, 3, 1, 350, -2.5);
-    lanes[3] = new Lane(3, LOG, 5, 1, 250, 1);
-    lanes[4] = new Lane(4, LOG, 4, 22, 100, -1.7);  // bottom most ocean row
+    lanes[1] = new Lane(1, LOG, 2, 1, 150, 3.5);
+    lanes[2] = new Lane(2, LOG, 3, 1, 350, -3.1);
+    lanes[3] = new Lane(3, LOG, 4, 1, 250, 2.7);
+    lanes[4] = new Lane(4, LOG, 1, 1, 200, -3.1);  // bottom most ocean row
     lanes[5] = new Lane(5, SAFETY, 0, 0, 0, 0);
-    lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.4); //
-    lanes[7] = new Lane(7, CAR, 2, 1, 150, -3.6);
-    lanes[8] = new Lane(8, CAR, 1, 1, 150, 2.3);
-    lanes[9] = new Lane(9, CAR, 3, 1, 150, -1); //index, type, number of vehicles, len, spacing, speed
+    lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.9); //
+    lanes[7] = new Lane(7, CAR, 3, 1, 150, -4.1);
+    lanes[8] = new Lane(8, CAR, 4, 1, 150, 3.8);
+    lanes[9] = new Lane(9, CAR, 3, 1, 150, -2.5); //index, type, number of vehicles, len, spacing, speed
     lanes[10] = new Lane(10, SAFETY, 0, 0, 0, 0);   //this is the most bottom row
 }
 function setUpLevel5() {
     lanes[0] = new Lane(0, FINISH, 0, 0, 0, 0);  //this is the most top row
-    lanes[1] = new Lane(1, LOG, 4, 1, 150, 3);
-    lanes[2] = new Lane(2, LOG, 3, 1, 350, -2.5);
-    lanes[3] = new Lane(3, LOG, 5, 1, 250, 1);
-    lanes[4] = new Lane(4, LOG, 4, 22, 100, -1.7);  // bottom most ocean row
+    lanes[1] = new Lane(1, LOG, 2, 1, 150, 4.5);
+    lanes[2] = new Lane(2, LOG, 2, 1, 350, -4.1);
+    lanes[3] = new Lane(3, LOG, 2, 1, 250, 3.7);
+    lanes[4] = new Lane(4, LOG, 1, 1, 200, -4.1);  // bottom most ocean row
     lanes[5] = new Lane(5, SAFETY, 0, 0, 0, 0);
-    lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.4); //
-    lanes[7] = new Lane(7, CAR, 2, 1, 150, -3.6);
-    lanes[8] = new Lane(8, CAR, 1, 1, 150, 2.3);
-    lanes[9] = new Lane(9, CAR, 3, 1, 150, -1); //index, type, number of vehicles, len, spacing, speed
+    lanes[6] = new Lane(6, CAR, 4, 1, 150, 3.9); //
+    lanes[7] = new Lane(7, CAR, 3, 1, 150, -5.1);
+    lanes[8] = new Lane(8, CAR, 4, 1, 150, 4.8);
+    lanes[9] = new Lane(9, CAR, 3, 1, 150, -3.5); //index, type, number of vehicles, len, spacing, speed
     lanes[10] = new Lane(10, SAFETY, 0, 0, 0, 0);   //this is the most bottom row
 }
 //level 5 everything gets pumped to it's maximum
