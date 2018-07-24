@@ -21,11 +21,19 @@ let nextLevel;
 let restartGame;
 let howToPlay;
 const finalLevel = 5;
+let pWidth;
+let sketchHolder;
+let positionInfo;
+
 
 
 function preload() {
   //  frogImage = loadImage('Frogger/images/frog.png');
     frogImage = loadImage('Frogger/images/frog2.png');
+    up = loadImage('Frogger/arrowKeys/up.png');
+    down = loadImage('Frogger/arrowKeys/down.png');
+    left = loadImage('Frogger/arrowKeys/left.png');
+    right = loadImage('Frogger/arrowKeys/right.png');
 
     // load road images
     for (let i = 0; i <= 11; i++) {
@@ -52,7 +60,14 @@ function setup() {
     //initially game will be setup at level 1
     gameState = PLAYING;  // change manually to test different states: GAMEOVERMENU or PLAYING or YOUWIN
     waitingForUser = false;
-    canvas = createCanvas(windowWidth / 2, 550);
+    sketchHolder = document.getElementById('sketch-holder');
+    positionInfo = sketchHolder.getBoundingClientRect();
+    pWidth = positionInfo.width;
+    console.log("parent's width: "+pWidth);
+
+    canvas = createCanvas(pWidth, 550);
+    // Displays the image at point (0, height/2) at half size
+  //  image(left,600, 600);
     canvas.id("froggerCanvas");
     canvas.parent('sketch-holder');
     resetGame();
@@ -84,6 +99,7 @@ function setupGame() {
 }
 
 function draw() {
+
     if (!waitingForUser) {
         if (gameState == PLAYING) {
             fill(255, 100);
@@ -92,10 +108,16 @@ function draw() {
             }
             let laneIndex = int(frog.y / grid);
             lanes[laneIndex].check(frog); //only check the lane in which the frog is in
+    /*        if (mouseIsPressed){
+                frog.mousePressed();
+            }
+            frog.adjustLocation();
+            frog.mouseReleased();
+            */
+
             frog.update();
             frog.show(); //draw the frog last
             if (laneIndex === 0) { //0 is the FINISH cause it's "backwards"
-                console.log("finished 2");
                 if(level == finalLevel){
                     gameState = YOUWIN;
                 }else {
@@ -159,7 +181,12 @@ window.addEventListener("keyup", function (e) {
 }, false);
 
 function windowResized() {
-    resizeCanvas(windowWidth/2, 550);
+    sketchHolder = document.getElementById('sketch-holder');
+    positionInfo = sketchHolder.getBoundingClientRect();
+    pWidth = positionInfo.width;
+    console.log("parent's width: "+pWidth);
+
+    resizeCanvas(pWidth, 550);
 }
 
 
@@ -201,7 +228,7 @@ function instructions() {
 }
 
 function clearGameOverMenu() {
-    console.log("clearing GameOver menu...")
+    console.log("clearing GameOver menu...");
     if(replayLevel) {
         replayLevel.remove();
     }
@@ -288,3 +315,8 @@ function setUpLevel5() {
     lanes[10] = new Lane(10, SAFETY, 0, 0, 0, 0);   //this is the most bottom row
 }
 //level 5 everything gets pumped to it's maximum
+
+
+function moveLeft() {
+    frog.move(-1, 0);
+}

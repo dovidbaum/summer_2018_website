@@ -2618,7 +2618,7 @@ fft = function () {
     } else {
       timeToInt(this, this.timeDomain);
       this.analyser.getByteTimeDomainData(this.timeDomain);
-      var normalArray = new Array();
+      var normalArray = [];
       for (var j = 0; j < this.timeDomain.length; j++) {
         var scaled = p5.prototype.map(this.timeDomain[j], 0, 255, -1, 1);
         normalArray.push(scaled);
@@ -9972,7 +9972,7 @@ metro = function () {
     var elapsedTime = tickTime - this.prevTick;
     var secondsFromNow = tickTime - p5sound.audiocontext.currentTime;
     if (elapsedTime - this.tatumTime <= -0.02) {
-      return;
+
     } else {
       // console.log('ok', this.syncedParts[0].phrases[0].name);
       this.prevTick = tickTime;
@@ -11163,7 +11163,7 @@ soundRecorder = function () {
    */
   p5.SoundRecorder.prototype._audioprocess = function (event) {
     if (this.recording === false) {
-      return;
+
     } else if (this.recording === true) {
       // if we are past the duration, then stop... else:
       if (this.sampleLimit && this.recordedSamples >= this.sampleLimit) {
@@ -12152,7 +12152,7 @@ polysynth = function () {
    */
   p5.PolySynth.prototype._updateAfter = function (time, value) {
     if (this._voicesInUse._searchAfter(time) === null) {
-      return;
+
     } else {
       this._voicesInUse._searchAfter(time).value += value;
       var nextTime = this._voicesInUse._searchAfter(time).time;

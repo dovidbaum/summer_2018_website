@@ -60,11 +60,36 @@
                 <!-- Intro Section -->
                 <div class="view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-color:#d1b58e">
                     <div class="full-bg-img">
-                        <div class="container flex-center">
+                        <div class="container-fluid">
                             <div class="row pt-5 mt-3">
-                                <div class="col-md-12">
-                                      <div id="sketch-holder" class="well well-sm col-xs-4 col-md-6 col-lg-6" ></div>
-                                        <div id="gameOverMenu-holder"></div>
+                            <!--    <div class="col-12"> -->
+                                    <div id="sketch-holder" class="col-9" ></div>
+                                    <div class="col-3">
+                                            <div class="row vbottomUp">
+                                            <div class="col-3"></div>
+                                            <div class="col-6">
+                                                <img src="Frogger/arrowKeys/up.png" width="48px" height="48px" alt="V">
+                                             </div>
+                                             <div class="col-3"></div>
+                                             </div>
+                                          <div class="row vbottomDirection">
+                                            <div class="col-6">
+                                                <img src="Frogger/arrowKeys/left.png" width="48px" height="48x" alt=">">
+                                             </div>
+                                             <div class="col-6">
+                                                <img src="Frogger/arrowKeys/right.png" width="48px" height="48px" alt="<">
+                                             </div>
+                                         </div>
+                                         <div class="row vbottomDown">
+                                              <div class="col-3"></div>
+                                              <div class="col-6">
+                                                  <img src="Frogger/arrowKeys/down.png" width="48px" height="48px" alt="V">
+                                              </div>
+                                              <div class="col-3"></div>
+                                         </div>
+                                    </div>
+
+
                                    <!--
                                     <div class="text-center">
                                         <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Minimalist intro</strong></h1>
@@ -74,7 +99,7 @@
                                         <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a>
                                     </div>
                                     -->
-                                </div>
+                            <!--    </div> -->
                             </div>
                         </div>
                     </div>
@@ -224,6 +249,24 @@
         // Animations init
         new WOW().init();
     </script>
+    <style>
+      .vbottomUp{
+        position: relative;
+        top: 60%;
+        transform: translateY(-60%);
+      }
+      .vbottomDirection{
+        position: relative;
+        border: 2px solid transparent;
+        top: 70%;
+        transform: translateY(-70%);
+      }
+      .vbottomDown{
+        position: relative;
+        top: 80%;
+        transform: translateY(-80%);
+      }
+</style>
 </body>
 
 </html>
