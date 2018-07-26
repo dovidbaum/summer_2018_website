@@ -24,6 +24,7 @@ const finalLevel = 5;
 let pWidth;
 let sketchHolder;
 let positionInfo;
+upArrowIsClicked = false;
 
 
 
@@ -157,7 +158,7 @@ function draw() {
 }
 
 function keyPressed() {
-    if (keyCode === UP_ARROW) {
+    if ((keyCode === UP_ARROW || upArrowIsClicked == true)) {
         frog.move(0, -1);
     } else if (keyCode === DOWN_ARROW) {
         frog.move(0, 1);
@@ -316,7 +317,10 @@ function setUpLevel5() {
 }
 //level 5 everything gets pumped to it's maximum
 
-
-function moveLeft() {
-    frog.move(-1, 0);
+function  upArrowIsClicked() {
+    console.log("wooohooo!!!!")
+    upArrowIsClicked = true;
 }
+
+
+

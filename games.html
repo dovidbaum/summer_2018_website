@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Dovid Baum's Portfolio - 2018</title>
+          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -14,6 +16,8 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -68,22 +72,25 @@
                                             <div class="row vbottomUp">
                                             <div class="col-3"></div>
                                             <div class="col-6">
-                                                <img src="Frogger/arrowKeys/up.png" width="48px" height="48px" alt="V">
+                                                 <span class="glyphicon glyphicon-menu-up" alt="^"
+                                                  onclick="Frogger/frogger.js.upArrowIsClicked == true">
+
+                                                  </span>
                                              </div>
                                              <div class="col-3"></div>
                                              </div>
                                           <div class="row vbottomDirection">
                                             <div class="col-6">
-                                                <img src="Frogger/arrowKeys/left.png" width="48px" height="48x" alt=">">
+                                            <span class="glyphicon glyphicon-menu-left" alt="<" id="leftArrow"></span>
                                              </div>
                                              <div class="col-6">
-                                                <img src="Frogger/arrowKeys/right.png" width="48px" height="48px" alt="<">
+                                                 <span class="glyphicon glyphicon-menu-right" alt=">" id="righArrow"></span>
                                              </div>
                                          </div>
                                          <div class="row vbottomDown">
                                               <div class="col-3"></div>
                                               <div class="col-6">
-                                                  <img src="Frogger/arrowKeys/down.png" width="48px" height="48px" alt="V">
+                                                 <span class="glyphicon glyphicon-menu-down" id="downArrow" alt="v"></span>
                                               </div>
                                               <div class="col-3"></div>
                                          </div>
@@ -183,7 +190,7 @@
 
                  <!-- Facebook -->
                  <a class="fb-ic">
-                   <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                   <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x" > </i>
                  </a>
                  <!-- Twitter -->
                  <a class="tw-ic">
@@ -252,19 +259,21 @@
     <style>
       .vbottomUp{
         position: relative;
-        top: 60%;
-        transform: translateY(-60%);
+        top: 65%;
+        transform: translateY(-65%);
       }
       .vbottomDirection{
         position: relative;
-        border: 2px solid transparent;
         top: 70%;
         transform: translateY(-70%);
       }
       .vbottomDown{
         position: relative;
-        top: 80%;
-        transform: translateY(-80%);
+        top: 75%;
+        transform: translateY(-75%);
+      }
+      .glyphicon {
+          font-size: 48px;
       }
 </style>
 </body>
