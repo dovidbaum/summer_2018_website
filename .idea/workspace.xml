@@ -4,7 +4,6 @@
     <list default="true" id="a823142b-3eb7-4345-bf8e-0a98695c24be" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Frogger/frogger.js" afterPath="$PROJECT_DIR$/Frogger/frogger.js" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
       <change beforePath="$PROJECT_DIR$/games.html" afterPath="$PROJECT_DIR$/games.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,30 +18,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="frogger.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="frogger.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+            <state relative-caret-position="381">
+              <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="p5.sound.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libraries/p5.sound.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="208">
+              <caret line="11410" column="2" lean-forward="false" selection-start-line="11410" selection-start-column="2" selection-end-line="11410" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="down.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frogger/arrowKeys/down.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="lane.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frogger/lane.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="64" column="103" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -63,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="games.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="83" column="66" lean-forward="true" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="66" />
+            <state relative-caret-position="1163">
+              <caret line="98" column="76" lean-forward="false" selection-start-line="98" selection-start-column="76" selection-end-line="98" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -78,16 +80,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134250">
               <caret line="8950" column="0" lean-forward="false" selection-start-line="8950" selection-start-column="0" selection-end-line="8950" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdb.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mdb.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,6 +105,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="rectangle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frogger/rectangle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -125,8 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>myDI</find>
-      <find>button</find>
       <find>material</find>
       <find>material De</find>
       <find>bann</find>
@@ -152,9 +152,11 @@
       <find>resize</find>
       <find>basic</find>
       <find>resi</find>
-      <find>up</find>
       <find>gly</find>
       <find>down</find>
+      <find>up</find>
+      <find>keyPressed</find>
+      <find>keyPresse</find>
     </findStrings>
     <replaceStrings>
       <replace>line2</replace>
@@ -186,8 +188,8 @@
         <option value="$PROJECT_DIR$/Frogger/frog.js" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Frogger/games.html" />
-        <option value="$PROJECT_DIR$/Frogger/frogger.js" />
         <option value="$PROJECT_DIR$/games.html" />
+        <option value="$PROJECT_DIR$/Frogger/frogger.js" />
       </list>
     </option>
   </component>
@@ -224,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -262,7 +265,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,22 +368,23 @@
       <workItem from="1532301800423" duration="7541000" />
       <workItem from="1532557168274" duration="2372000" />
       <workItem from="1532562842061" duration="2729000" />
+      <workItem from="1532642196903" duration="3195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122321000" />
+    <option name="totallyTimeSpent" value="125516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="737" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17211156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16542473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -414,7 +417,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frogger/images/finishLineImages/9.png" />
     <entry file="file://$PROJECT_DIR$/Frogger/images/finishLineImages/10.png" />
     <entry file="file://$PROJECT_DIR$/Frogger/images/finishLineImages/11.png" />
     <entry file="file://$PROJECT_DIR$/Frogger/images/finishLineImages/6.png" />
@@ -533,13 +535,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frogger/images/finishLineImages/0.png" />
     <entry file="file://$PROJECT_DIR$/Frogger/images/finish.png" />
-    <entry file="file://$PROJECT_DIR$/Frogger/lane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="55" lean-forward="false" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -588,18 +583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frogger/rectangle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/p5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729735">
           <caret line="48649" column="0" lean-forward="false" selection-start-line="48649" selection-start-column="0" selection-end-line="48649" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,25 +608,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frogger/frog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="6" lean-forward="false" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frogger/arrowKeys/down.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogger/obstacle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mdb.css">
@@ -671,18 +642,58 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
+    <entry file="file://$PROJECT_DIR$/Frogger/lane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+        <state relative-caret-position="49">
+          <caret line="64" column="103" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="83" column="66" lean-forward="true" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="66" />
+        <state relative-caret-position="1163">
+          <caret line="98" column="76" lean-forward="false" selection-start-line="98" selection-start-column="76" selection-end-line="98" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/p5.sound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="11410" column="2" lean-forward="false" selection-start-line="11410" selection-start-column="2" selection-end-line="11410" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogger/frog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="6" lean-forward="false" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogger/rectangle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogger/obstacle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
           <folding />
         </state>
       </provider>

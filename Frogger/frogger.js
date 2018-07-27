@@ -24,7 +24,11 @@ const finalLevel = 5;
 let pWidth;
 let sketchHolder;
 let positionInfo;
-upArrowIsClicked = false;
+let upArrowIsClicked = false;
+let downArrowIsClicked = false;
+let leftArrowIsClicked = false;
+let rightArrowIsClicked = false;
+
 
 
 
@@ -157,16 +161,21 @@ function draw() {
 
 }
 
+
+
+
+
 function keyPressed() {
-    if ((keyCode === UP_ARROW || upArrowIsClicked == true)) {
-        frog.move(0, -1);
-    } else if (keyCode === DOWN_ARROW) {
-        frog.move(0, 1);
-    } else if (keyCode === LEFT_ARROW) {
-        frog.move(-1, 0);
-    } else if (keyCode === RIGHT_ARROW) {
-        frog.move(1, 0);
+    if ((keyCode === UP_ARROW)) {
+        frog.move(0, -1);   // move up
+    } else if ((keyCode === DOWN_ARROW)) {
+        frog.move(0, 1);;  // move down
+    } else if ((keyCode === LEFT_ARROW)) {
+        frog.move(-1, 0);  // move left
+    } else if ((keyCode === RIGHT_ARROW)) {
+        frog.move(1, 0);   // move right
     }
+
 }
 
 /*prevent scrolling while playing */
@@ -317,10 +326,22 @@ function setUpLevel5() {
 }
 //level 5 everything gets pumped to it's maximum
 
-function  upArrowIsClicked() {
-    console.log("wooohooo!!!!")
-    upArrowIsClicked = true;
-}
+
+// also be on the loot out for on screen clicks
+document.getElementById('upArrow').onclick = function () {
+    frog.move(0, -1);   // move up
+
+};
+document.getElementById('downArrow').onclick = function () {
+    frog.move(0, 1);;  // move down
+
+};
+document.getElementById('leftArrow').onclick = function () {
+    frog.move(-1, 0);  // move left
+};
+document.getElementById('rightArrow').onclick = function () {
+    frog.move(1, 0);   // move right
+};
 
 
 
