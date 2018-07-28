@@ -21,8 +21,8 @@
       <file leaf-file-name="frogger.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="331" column="34" lean-forward="true" selection-start-line="331" selection-start-column="34" selection-end-line="331" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -31,7 +31,7 @@
       <file leaf-file-name="p5.sound.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libraries/p5.sound.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="171150">
               <caret line="11410" column="2" lean-forward="false" selection-start-line="11410" selection-start-column="2" selection-end-line="11410" selection-end-column="2" />
               <folding />
             </state>
@@ -41,7 +41,7 @@
       <file leaf-file-name="lane.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frogger/lane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
+            <state relative-caret-position="960">
               <caret line="64" column="103" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
               <folding />
             </state>
@@ -68,8 +68,8 @@
       <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1163">
-              <caret line="98" column="76" lean-forward="false" selection-start-line="98" selection-start-column="76" selection-end-line="98" selection-end-column="76" />
+            <state relative-caret-position="475">
+              <caret line="285" column="25" lean-forward="false" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -127,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>material</find>
       <find>material De</find>
       <find>bann</find>
       <find>portfo</find>
@@ -157,6 +156,7 @@
       <find>up</find>
       <find>keyPressed</find>
       <find>keyPresse</find>
+      <find>gamveOv</find>
     </findStrings>
     <replaceStrings>
       <replace>line2</replace>
@@ -205,9 +205,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="17" />
+    <option name="y" value="138" />
     <option name="width" value="1276" />
     <option name="height" value="737" />
   </component>
@@ -226,8 +226,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,14 +369,15 @@
       <workItem from="1532557168274" duration="2372000" />
       <workItem from="1532562842061" duration="2729000" />
       <workItem from="1532642196903" duration="3195000" />
+      <workItem from="1532728466259" duration="1108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125516000" />
+    <option name="totallyTimeSpent" value="126624000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1276" height="737" extended-state="0" />
+    <frame x="0" y="22" width="1276" height="698" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17211156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -384,7 +385,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16542473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16542473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -604,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,23 +643,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frogger/lane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
+        <state relative-caret-position="960">
           <caret line="64" column="103" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1163">
-          <caret line="98" column="76" lean-forward="false" selection-start-line="98" selection-start-column="76" selection-end-line="98" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/p5.sound.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="171150">
           <caret line="11410" column="2" lean-forward="false" selection-start-line="11410" selection-start-column="2" selection-end-line="11410" selection-end-column="2" />
           <folding />
         </state>
@@ -690,10 +681,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/games.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="285" column="25" lean-forward="false" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="331" column="34" lean-forward="true" selection-start-line="331" selection-start-column="34" selection-end-line="331" selection-end-column="34" />
           <folding />
         </state>
       </provider>

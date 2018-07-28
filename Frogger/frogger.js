@@ -343,5 +343,3 @@ document.getElementById('rightArrow').onclick = function () {
     frog.move(1, 0);   // move right
 };
 
-
-
