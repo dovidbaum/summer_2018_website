@@ -22,12 +22,14 @@ let restartGame;
 let howToPlay;
 const finalLevel = 5;
 let pWidth;
+let pHeight;
 let sketchHolder;
 let positionInfo;
 let upArrowIsClicked = false;
 let downArrowIsClicked = false;
 let leftArrowIsClicked = false;
 let rightArrowIsClicked = false;
+let gameoverContentContainer;
 
 
 
@@ -71,10 +73,14 @@ function setup() {
     console.log("parent's width: "+pWidth);
 
     canvas = createCanvas(pWidth, 550);
-    // Displays the image at point (0, height/2) at half size
-  //  image(left,600, 600);
     canvas.id("froggerCanvas");
     canvas.parent('sketch-holder');
+   // gameoverContentContainer.parent('froggerCanvas');
+  //  gameoverContentContainer.id('gameoverContentContainer');
+
+    // Displays the image at point (0, height/2) at half size
+  //  image(left,600, 600);
+
     resetGame();
     setupGame();
 
@@ -99,6 +105,10 @@ function setupGame() {
     } else{
         gameState = YOUWIN;
     }
+    sketchHolder = document.getElementById('sketch-holder');
+    positionInfo = sketchHolder.getBoundingClientRect();
+    pWidth = positionInfo.width;
+    pHeight = positionInfo.height;
 
 
 }
@@ -134,11 +144,12 @@ function draw() {
                 waitingForUser = true;
                 background('#222222');
                 fill("#86f73b");
-                textSize(55);
-                text('You Beat Level ' + level + "!", ((windowWidth / 2) / 2) - 200, (550 / 2) - 150);
-                replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) - 100));
-                nextLevel = createGameOverMenuButton("Next Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) - 50));
-                restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2)));
+                textSize(40);
+                text('You Beat Level ' + level + "!", ((pWidth / 2)) - 150, (550 / 2) - 150);
+                replayLevel = createGameOverMenuButton("Replay Level", (((pWidth / 2)) - 50), ((550 / 2) - 100));
+                nextLevel = createGameOverMenuButton("Next Level", (((pWidth / 2)) - 50), ((550 / 2) - 50));
+                restartGame = createGameOverMenuButton("Restart Game", (((pWidth/ 2)) - 50), ((550 / 2)));
+
             }
             replayLevel.mousePressed(replay);
             nextLevel.mousePressed(next);
@@ -151,8 +162,8 @@ function draw() {
                 textSize(100);
                 text('You',((windowWidth / 2) / 2) - 100, (550 / 2) - 150);
                 text('Win!',((windowWidth / 2) / 2) - 100, (550 / 2));
-                replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) + 100));
-                restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2))+ 150);
+                replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) + 100),"replay");
+                restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2))+ 150,"restart");
             }
             replayLevel.mousePressed(replay);
             restartGame.mousePressed(restart);
@@ -167,13 +178,15 @@ function draw() {
 
 function keyPressed() {
     if ((keyCode === UP_ARROW)) {
-        frog.move(0, -1);   // move up
+        moveUp();
     } else if ((keyCode === DOWN_ARROW)) {
-        frog.move(0, 1);;  // move down
+       moveDown();
+
     } else if ((keyCode === LEFT_ARROW)) {
-        frog.move(-1, 0);  // move left
+        moveLeft();
+
     } else if ((keyCode === RIGHT_ARROW)) {
-        frog.move(1, 0);   // move right
+        moveRight();
     }
 
 }
@@ -194,17 +207,22 @@ function windowResized() {
     sketchHolder = document.getElementById('sketch-holder');
     positionInfo = sketchHolder.getBoundingClientRect();
     pWidth = positionInfo.width;
-    console.log("parent's width: "+pWidth);
+    pHeight = positionInfo.height;
+
+  //  replay = button.document.getElementById("replay");
+  //  replay.position(pWidth/2, pHeight/2);
+
 
     resizeCanvas(pWidth, 550);
+
+
 }
 
 
-function createGameOverMenuButton(buttonName, posX, posY) {
+function createGameOverMenuButton(buttonName, posX, posY,idName) {
     let button = createButton(buttonName);
-    button.id(buttonName);
-    button.parent("sketch-holder");
-    //document.getElementById(buttonName).style.background='#000000';
+    button.id(idName); //i.e
+    button.parent("sketch-holder");    //document.getElementById(buttonName).style.background='#000000';
     button.size(150);
     button.position(posX, posY); //position in the middle of canvas
     button.style("border", "2px solid #f74c3b");
@@ -329,17 +347,55 @@ function setUpLevel5() {
 
 // also be on the loot out for on screen clicks
 document.getElementById('upArrow').onclick = function () {
-    frog.move(0, -1);   // move up
+    moveUp();
 
 };
 document.getElementById('downArrow').onclick = function () {
-    frog.move(0, 1);;  // move down
+    moveDown();
 
 };
 document.getElementById('leftArrow').onclick = function () {
-    frog.move(-1, 0);  // move left
+    moveLeft();
+
 };
 document.getElementById('rightArrow').onclick = function () {
-    frog.move(1, 0);   // move right
+    moveRight();
 };
+
+function moveUp() {
+    frog.move(0, -1);   // move up
+    document.getElementById('upArrow').style.color = "blue";
+
+    document.getElementById('downArrow').style.color = "black";
+    document.getElementById('leftArrow').style.color = "black";
+    document.getElementById('rightArrow').style.color = "black";
+
+}
+function moveDown() {
+    frog.move(0, 1);   // move down
+    document.getElementById('downArrow').style.color = "red";
+
+    document.getElementById('upArrow').style.color = "black";
+    document.getElementById('leftArrow').style.color = "black";
+    document.getElementById('rightArrow').style.color = "black";
+}
+function moveLeft() {
+    frog.move(-1, 0);  // move left
+    document.getElementById('leftArrow').style.color = "orange";
+
+    document.getElementById('upArrow').style.color = "black";
+    document.getElementById('downArrow').style.color = "black";
+    document.getElementById('rightArrow').style.color = "black";
+}
+function moveRight() {
+    frog.move(1, 0);   // move right
+    document.getElementById('rightArrow').style.color = "green";
+
+    document.getElementById('upArrow').style.color = "black";
+    document.getElementById('downArrow').style.color = "black";
+    document.getElementById('leftArrow').style.color = "black";
+}
+
+
+
 
