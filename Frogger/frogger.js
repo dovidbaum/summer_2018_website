@@ -364,7 +364,7 @@ document.getElementById('rightArrow').onclick = function () {
 
 function moveUp() {
     frog.move(0, -1);   // move up
-    document.getElementById('upArrow').style.color = "blue";
+    document.getElementById('upArrow').style.color = "#21c4e6";
 
     document.getElementById('downArrow').style.color = "black";
     document.getElementById('leftArrow').style.color = "black";
@@ -373,7 +373,7 @@ function moveUp() {
 }
 function moveDown() {
     frog.move(0, 1);   // move down
-    document.getElementById('downArrow').style.color = "red";
+    document.getElementById('downArrow').style.color = "#f74c3b";
 
     document.getElementById('upArrow').style.color = "black";
     document.getElementById('leftArrow').style.color = "black";
@@ -381,7 +381,7 @@ function moveDown() {
 }
 function moveLeft() {
     frog.move(-1, 0);  // move left
-    document.getElementById('leftArrow').style.color = "orange";
+    document.getElementById('leftArrow').style.color = "#fecc2f";
 
     document.getElementById('upArrow').style.color = "black";
     document.getElementById('downArrow').style.color = "black";
