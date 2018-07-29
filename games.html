@@ -26,39 +26,44 @@
     <!--Main Navigation-->
             <header>
 
-                <!--Navbar-->
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                    <div class="container">
-                        <a class="navbar-brand" href="#"><strong>Dovid Baum</strong></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                     <a class="nav-link" href="games.html">Games</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="algorithms.html">Riddles & Algorithms</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://playlists-spotify-backend.herokuapp.com/login">Apps</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Profile</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline">
-                                <div class="md-form mt-0">
-                                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
+               <!--Navbar-->
+                   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                       <div class="container">
+                           <a class="navbar-brand" href="#"><strong>Dovid Baum</strong></a>
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6"
+                                   aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
+                               <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
+                               <ul class="navbar-nav mr-auto">
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item active">
+                                       <a class="nav-link" href="#">Games<span class="sr-only">(current)</span></a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="algorithms.html">Riddles & Algorithms</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="https://playlists-spotify-backend.herokuapp.com/login">Apps</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#">Profile</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#">Drawings</a>
+                                   </li>
+                               </ul>
+                               <form class="form-inline">
+                                   <div class="md-form mt-0">
+                                       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                   </nav>
+                   <!-- /Navbar-->
 
 
                 <!-- Intro Section -->
@@ -73,7 +78,7 @@
                                              <div class="row vbottomUp">
                                                 <div class="col-3"></div>
                                                 <div class="col-6">
-                                                    <button id="upArrow">
+                                                    <button id="upArrow" class="arrowKeys">
                                                          <span class="glyphicon glyphicon-menu-up" alt="^"></span>
                                                     </button>
                                                 </div>
@@ -81,12 +86,12 @@
                                              </div>
                                             <div class="row vbottomDirection">
                                                 <div class="col-6">
-                                                    <button id="leftArrow">
+                                                    <button id="leftArrow" class="arrowKeys">
                                                         <span class="glyphicon glyphicon-menu-left" alt="<"></span>
                                                     </button>
                                                 </div>
                                                 <div class="col-6">
-                                                <button id="rightArrow">
+                                                <button id="rightArrow" class="arrowKeys">
                                                     <span class="glyphicon glyphicon-menu-right" alt=">" id="righArrow"></span>
                                                  </button>
                                                 </div>
@@ -94,7 +99,7 @@
                                             <div class="row vbottomDown">
                                               <div class="col-3"></div>
                                               <div class="col-6">
-                                                 <button>
+                                                 <button id="downArrow" class="arrowKeys">
                                                     <span class="glyphicon glyphicon-menu-down" id="downArrow" alt="v"></span>
                                                  </button>
                                               </div>
@@ -169,68 +174,61 @@
             </main>
             <!--Main Layout-->
 
-      <!-- Footer -->
-      <footer class="page-footer font-small darken-3 " style="background-color: #262626">
+       <!-- Footer -->
+       <footer class="page-footer font-small black darken-3 mt-4">
 
-          <!-- Footer Links -->
-          <div class="container">
+         <!-- Footer Links -->
+         <div class="container">
 
-              <!-- Grid row-->
-              <div class="row">
+           <!-- Grid row-->
+           <div class="row">
 
-                  <!-- Grid column -->
-                  <div class="col-md-12 py-5">
-                      <div class="mb-5 flex-center">
+             <!-- Grid column -->
+             <div class="col-md-12 py-5">
+               <div class="mb-5 flex-center">
 
-                          <!-- Quora -->
-                          <a class="quora-ic">
-                              <a href="https://www.quora.com/profile/Dovid-Baum-1/questions" title="Quora">
-                              <i class="fa fa-quora fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                              </a>
-                          </a>
-                          <!--Email-->
-                              <a class="email-ic mr-3">
-                                  <a href=mailto:dovidbaum@gmail.com title="Email">
-                                  <i class="fa fa-lg fa-envelope-o white-text mr-md-5 mr-3 fa-2x"></i>
-                              </a>
-                          </a>
-                          <!-- Google +-->
-                          <a class="git-ic">
-                              <a href="https://github.com/dovidbaum" title="Github">
-                                  <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                              </a>
-                          </a>
+                 <!-- Facebook -->
+                 <a class="fb-ic">
+                   <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x" > </i>
+                 </a>
+                 <!-- Twitter -->
+                 <a class="tw-ic">
+                   <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                 </a>
+                 <!-- Google +-->
+                 <a class="gplus-ic">
+                   <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                 </a>
+                 <!--Linkedin -->
+                 <a class="li-ic">
+                   <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                 </a>
+                 <!--Instagram-->
+                 <a class="ins-ic">
+                   <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                 </a>
+                 <!--Pinterest-->
+                 <a class="pin-ic">
+                   <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+                 </a>
+               </div>
+             </div>
+             <!-- Grid column -->
 
-                          <!--Linkedin -->
-                          <a class="li-ic">
-                              <a href="https://www.linkedin.com/in/dovidbaum/" title="LinkedIn">
-                                  <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                              </a>
-                          </a>
-                          <!--Instagram-->
-                          <a class="ins-ic">
-                              <a href="https://www.instagram.com/dovidb/" title="Instagram">
-                                  <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                              </a>
-                          </a>
-                      </div>
-                  </div>
-                  <!-- Grid column -->
+           </div>
+           <!-- Grid row-->
 
-              </div>
-              <!-- Grid row-->
+         </div>
+         <!-- Footer Links -->
 
-          </div>
-          <!-- Footer Links -->
+         <!-- Copyright -->
+         <div class="footer-copyright text-center py-3">© 2018 Copyright:
+           <a href="https://mdbootstrap.com/bootstrap-tutorial/"> DovidBaum.com</a>
+         </div>
+         <!-- Copyright -->
 
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">© 2018 Copyright:
-              <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Dovid Baum</a>
-          </div>
-          <!-- Copyright -->
-
-      </footer>
-      <!-- Footer -->
+       </footer>
+       <!-- Footer -->
     </div>
 
     <!-- SCRIPTS -->

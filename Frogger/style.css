@@ -20,7 +20,8 @@ canvas {
     border-radius: 16px;
 }
 
-
-#replay{
-
+.arrowKeys{
+border-radius: 8px;
+color: #222222;
+    background-color: #196a7f;
 }

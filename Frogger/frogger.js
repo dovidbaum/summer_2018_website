@@ -25,22 +25,10 @@ let pWidth;
 let pHeight;
 let sketchHolder;
 let positionInfo;
-let upArrowIsClicked = false;
-let downArrowIsClicked = false;
-let leftArrowIsClicked = false;
-let rightArrowIsClicked = false;
-let gameoverContentContainer;
-
-
-
 
 function preload() {
   //  frogImage = loadImage('Frogger/images/frog.png');
     frogImage = loadImage('Frogger/images/frog2.png');
-    up = loadImage('Frogger/arrowKeys/up.png');
-    down = loadImage('Frogger/arrowKeys/down.png');
-    left = loadImage('Frogger/arrowKeys/left.png');
-    right = loadImage('Frogger/arrowKeys/right.png');
 
     // load road images
     for (let i = 0; i <= 11; i++) {
@@ -366,34 +354,34 @@ function moveUp() {
     frog.move(0, -1);   // move up
     document.getElementById('upArrow').style.color = "#21c4e6";
 
-    document.getElementById('downArrow').style.color = "black";
-    document.getElementById('leftArrow').style.color = "black";
-    document.getElementById('rightArrow').style.color = "black";
+    document.getElementById('downArrow').style.color = "#222222";
+    document.getElementById('leftArrow').style.color = "#222222";
+    document.getElementById('rightArrow').style.color = "#222222";
 
 }
 function moveDown() {
     frog.move(0, 1);   // move down
     document.getElementById('downArrow').style.color = "#f74c3b";
 
-    document.getElementById('upArrow').style.color = "black";
-    document.getElementById('leftArrow').style.color = "black";
-    document.getElementById('rightArrow').style.color = "black";
+    document.getElementById('upArrow').style.color = "#222222";
+    document.getElementById('leftArrow').style.color = "#222222";
+    document.getElementById('rightArrow').style.color = "#222222";
 }
 function moveLeft() {
     frog.move(-1, 0);  // move left
     document.getElementById('leftArrow').style.color = "#fecc2f";
 
-    document.getElementById('upArrow').style.color = "black";
-    document.getElementById('downArrow').style.color = "black";
-    document.getElementById('rightArrow').style.color = "black";
+    document.getElementById('upArrow').style.color = "#222222";
+    document.getElementById('downArrow').style.color = "#222222";
+    document.getElementById('rightArrow').style.color = "#222222";
 }
 function moveRight() {
     frog.move(1, 0);   // move right
     document.getElementById('rightArrow').style.color = "green";
 
-    document.getElementById('upArrow').style.color = "black";
-    document.getElementById('downArrow').style.color = "black";
-    document.getElementById('leftArrow').style.color = "black";
+    document.getElementById('upArrow').style.color = "#222222";
+    document.getElementById('downArrow').style.color = "#222222";
+    document.getElementById('leftArrow').style.color = "#222222";
 }
 
 
