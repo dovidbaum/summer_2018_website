@@ -1,6 +1,6 @@
     let columns = 50;  //50
     let rows = 50;
-    let grid  = new Array(columns);
+    let grid;
     let openSet = [];
     let closedSet = [];
     let start;
@@ -16,6 +16,8 @@ function setup(){
     canvas.parent('shortestPath-holder')
     w = width/columns;
     h = height/rows;
+
+    grid  = new Array(columns);
 
     //creating 2D array - the grid
     for(let i= 0; i < columns; i++ ){
@@ -36,8 +38,8 @@ function setup(){
     }
 
 
-    start = grid[0][rows-1];
-    end = grid[columns-1][0];
+    start = grid[0][rows-1]; // bottom left
+    end = grid[columns-1][0]; // top right
     // ensure start and end are never a wall
     start.wall = false;
     end.wall = false;
@@ -162,4 +164,13 @@ function removeFromArray(array,element){
 function heuristic(a,b) {
         return dist(a.i,a.j,b.i,b.j);
        // return abs(a.i-b.i) + abs(a.j - b.j);
-    }
+}
+
+/*document.getElementById('replay').onclick = function () {
+    console.log("replay was clicked");
+}
+
+document.getElementById('randomize').onclick = function () {
+        console.log("randomize was clicked");
+}
+*/

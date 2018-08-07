@@ -61,6 +61,7 @@
         </div>
     </nav>
     <!-- /Navbar -->
+
     <!-- Canvas -->
     <div class="container position-absolute" style="z-index: 1">
         <div class="row pt-3 mt-3">
@@ -80,8 +81,7 @@
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <button onclick="myFunction()" data-toggle="collapse" href="#myDIV" id="about" type="button"
-                class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-question-sign"></span> about the
-            website
+                class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-question-sign"></span> ReadMe
         </button>
 
     </div>
@@ -101,37 +101,18 @@
             <!--Grid column-->
             <div class="col-12 text-center">
 
-                <p>This section will appear and disappear as button is pressed....Sed ut perspiciatis unde omnis iste
-                    natus error sit voluptatem accusantium doloremque
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                    dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                    consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-                    pariatur?</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum.</p>
-
-                <p>Apps will be like world weather or other ajax type appsde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                    tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                    ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                    esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-                    nulla pariatur?</p>
+                <p align="left">
+                 I use this website as an outlet to create programs that interest me outside of work and school.
+                 It’s continually in progress and I encourage you to report any bugs or unintuitive experiences.
+                </p>
+                <p align="left">
+                 Currently I’m aiming to improve the mobile experience as I neglected to prepare for dynamic
+                 platforms in much of my initial development.
+                </p>
+                <p align="left">
+                  Right now I’m learning React, a javascript library. It will act as the framework to the Playlist
+                  app I’m currently working on. Check out my progress by viewing the navbar
+                </p>
 
             </div>
             <!--Grid column-->
@@ -163,14 +144,16 @@
                         </a>
                     </a>
                     <!--Email-->
-                    <a class="email-ic mr-3">
-                        <a href="https://www.linkedin.com/in/dovidbaum/" title="LinkedIn">
+                        <a class="email-ic mr-3">
+                            <a href=mailto:dovidbaum@gmail.com title="Email">
                             <i class="fa fa-lg fa-envelope-o white-text mr-md-5 mr-3 fa-2x"></i>
                         </a>
                     </a>
                     <!-- Google +-->
                     <a class="git-ic">
-                        <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        <a href="https://github.com/dovidbaum" title="Github">
+                            <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
                     </a>
 
                     <!--Linkedin -->
@@ -231,13 +214,13 @@
         let button = document.getElementById("about");
         if (x.style.display === "none") {
             x.style.display = "block";
-            button.innerHTML = "hide about";
+            button.innerHTML = "Don't ReadMe";
             //  x.className = "animated fadeInLeft";
         } else {
             //  x.className = "animated rotateOut"
             x.style.display = "none";
             //change button text
-            button.innerHTML = "about the website";
+            button.innerHTML = "ReadMe";
 
 
         }

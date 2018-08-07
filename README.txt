@@ -1,7 +1,7 @@
 Introduction:
 The goal of this website is to create a location where I can express some of the projects I enjoy working on when not in school or work.
-Many, if not most of the project on this site were inspired by coders online. Coders who I've never met and probably wil never meet
-but to whom I am forever grateful. It is these member of the open source community that gave me a love of coding and exposed me to
+Many, if not most of the project on this site were inspired by coders online. Coders who I've never met and probably will never meet
+but to whom I am forever grateful. It is these members of the open source community that gave me a love of coding and exposed me to
 the power one can have with code and also the joy it can bring someone. This website has been an outlet for me to reclaim the joy I have
 for coding.
 
@@ -11,7 +11,7 @@ index Page:
 
 
 Frogger Game:
-    I give credit to 'The Coding Train' for the inspiration for this game.
+    I give credit to 'The Coding Train' for this game.
     A youtube video explaining how to setup the game can be found here: https://www.youtube.com/watch?v=giXV6xErw0Y
     credit:
     p5.js: https://www.youtube.com/watch?v=giXV6xErw0Y&t=123s
@@ -26,6 +26,14 @@ Spotify API:
     Travis - http://www.travandlos.com/
 
     A youtube video explaining how to setup the App can be found here: https://www.youtube.com/watch?v=rzk8n-4gMWs
+
+Shortest Path Algorithm
+
+I give credit to 'The Coding Train' for this game.
+    Youtube videos explaining how to setup the game can be found here:
+    https://www.youtube.com/watch?v=EaZxUCWAjb0
+    https://www.youtube.com/watch?v=aKYlikFAV4k&t=612s
+
 
 Material Design for Bootstrap
 
