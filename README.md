@@ -1,3 +1,15 @@
+# Dovid's Summer 2018 Website
+
+## About the site 
+
+##Credit and Citations
+
+##Sections
+
+##Bugs
+
+
+
 Introduction:
 The goal of this website is to create a location where I can express some of the projects I enjoy working on when not in school or work.
 Many, if not most of the project on this site were inspired by coders online. Coders who I've never met and probably will never meet
