@@ -1,54 +1,31 @@
 # Dovid's Summer 2018 Website
 
 ## About the site 
-
-##Credit and Citations
-
-##Sections
-
-##Bugs
-
-
-
-Introduction:
-The goal of this website is to create a location where I can express some of the projects I enjoy working on when not in school or work.
-Many, if not most of the project on this site were inspired by coders online. Coders who I've never met and probably will never meet
+The goal of this website is to create a location where I can express some of the projects I enjoy working on outside of school and work.
+Many, if not most of these projects are inspired by coders online. These coders I've never met and probably will never meet
 but to whom I am forever grateful. It is these members of the open source community that gave me a love of coding and exposed me to
-the power one can have with code and also the joy it can bring someone. This website has been an outlet for me to reclaim the joy I have
-for coding.
-
-index Page:
-    I give credit to 'The Coding Train' for the inspiration of this affect.
-    A youtube video explaining how to setup the canvas can be found here: https://www.youtube.com/watch?v=4hA7G3gup-4&t=140s
-
-
-Frogger Game:
-    I give credit to 'The Coding Train' for this game.
+the power and joy coding can bring.
+## Credit and Citations
+### index Page
+Thank you to 'The Coding Train' for teaching me how to make the Steering Behavior affect.
+A youtube video explaining how to setup the canvas can be found here: https://www.youtube.com/watch?v=4hA7G3gup-4&t=140s
+The Framework used is P5.js: https://p5js.org/
+### Frogger Game
+Once again 'The Coding Train' for creating the original Frogger game
     A youtube video explaining how to setup the game can be found here: https://www.youtube.com/watch?v=giXV6xErw0Y
-    credit:
-    p5.js: https://www.youtube.com/watch?v=giXV6xErw0Y&t=123s
-    Animation from Tig: https://www.youtube.com/watch?v=PziMfEwXY6o
-
-Spotify API:
-    I give credit to:
-    MPJ's channel on programming Fun Fun Function is great  - https://www.youtube.com/funfunfunction
-
-    David is known as Data David discussing analytics and data - https://www.youtube.com/channel/UC0TQ...
-
-    Travis - http://www.travandlos.com/
-
-    A youtube video explaining how to setup the App can be found here: https://www.youtube.com/watch?v=rzk8n-4gMWs
-
-Shortest Path Algorithm
-
+    P5.js Framework: https://p5js.org/
+    Thank you to Animation From Tig for help on improving the Sprite and graphics: https://www.youtube.com/watch?v=PziMfEwXY6o
+### Playlist App for Spotify 
+I followed the tutorial found DevTips youtube channel: https://www.youtube.com/watch?v=rzk8n-4gMWs
+Follow Data David who was apart of the tutorial: https://www.youtube.com/channel/UC0TQC6ZPNm23dU6ecc5x0Gg
+And MPJ's channel on programming Fun Fun Function: https://www.youtube.com/funfunfunction
+And Travis: http://www.travandlos.com/
+### Shortest Path Algorithm
 I give credit to 'The Coding Train' for this game.
-    Youtube videos explaining how to setup the game can be found here:
-    https://www.youtube.com/watch?v=EaZxUCWAjb0
-    https://www.youtube.com/watch?v=aKYlikFAV4k&t=612s
-
-
-Material Design for Bootstrap
-
+Youtube videos explaining how to setup the game can be found here: https://www.youtube.com/watch?v=aKYlikFAV4k
+A* Algorithm: https://en.wikipedia.org/wiki/A*_search_algorithm
+### HTML design
+Thank you to Material Design for Bootstrap for providing a framework for the Websites layout
 Version: MDB Free 4.5.3
 
 Documentation:
@@ -87,5 +64,26 @@ Dribbble: https://dribbble.com/mdbootstrap
 
 Contact:
 office@mdbootstrap.com
+
+##Bugs and Improvements to be had 
+• Frogger needs to be fixed for mobile screens
+• Shortest path Randomize button reloads the entire page, have it just reload the Canvas
+• Frogger page style is overridden and therefore not consistent with the rest of the website 
+• Playlist app barely works on mobile
+• Playlist app needs to be taken to the next level as I get more familiar with with React
+    • List all songs in a playlist but in a scrollbox
+• Implement about page
+• Post personaldrawings on Drawing page     
+
+    
+
+
+
+
+
+
+
+
+
 
 
