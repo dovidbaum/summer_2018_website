@@ -67,7 +67,11 @@ Contact:
 office@mdbootstrap.com
 
 ## Bugs and Improvements to be had 
-* Frogger needs to be fixed for mobile screens.    
+* Frogger needs to be fixed for mobile screens. 
+    * arrow keys only display correctly on localhost, on top right as oppose to bottom right  
+    * Canvas takes unique style versus localhost 
+    * You Win! screen is off centered 
+    * screen freezes when get jit on mobile screen, create a restart button after you fix arrow keys       
 * Shortest path Randomize button reloads the entire page, have it just reload the Canvas.    
 * Frogger page style is overridden and therefore not consistent with the rest of the website.     
 * Playlist app barely works on mobile.    
