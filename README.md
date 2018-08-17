@@ -1,5 +1,5 @@
 # Dovid's Summer 2018 Website
-hhttp://terpconnect.umd.edu/~dbaum/summer_2018_website/index.html
+http://terpconnect.umd.edu/~dbaum/summer_2018_website/index.html
 
 
 ## About the site 
