@@ -1,10 +1,8 @@
-# Dovid's Summer 2018 Website
-http://terpconnect.umd.edu/~dbaum/summer_2018_website/index.html
-
+# <a href="http://terpconnect.umd.edu/~dbaum/summer_2018_website/index.html">Dovid's Summer 2018 Website </a>
 
 ## About the site 
 The goal of this website is to create a location where I can express some of the projects I enjoy working on outside of school and work.
-Many, if not most of these projects are inspired by coders online. These coders I've never met and probably will never meet
+Many of these projects are inspired by coders online. These coders I've never met and probably will never meet
 but to whom I am forever grateful. It is these members of the open source community that gave me a love of coding and exposed me to
 the power and joy coding can bring.
 ## Credit and Citations
