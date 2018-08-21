@@ -267,10 +267,10 @@ function setUpLevel1() {
     lanes[3] = new Lane(3, LOG, 5, 1, 250, 1.1);
     lanes[4] = new Lane(4, LOG, 4, 1, 200, -1.7);  // bottom most ocean row
     lanes[5] = new Lane(5, SAFETY, 0, 0, 0, 0);
-    lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.4); //
-    lanes[7] = new Lane(7, CAR, 2, 1, 150, -3.6);
-    lanes[8] = new Lane(8, CAR, 1, 1, 150, 2.3);
-    lanes[9] = new Lane(9, CAR, 3, 1, 150, -1); //index, type, number of vehicles, len, spacing, speed
+    lanes[6] = new Lane(6, CAR, 4, 1, 450, 2.4); //
+    lanes[7] = new Lane(7, CAR, 2, 1, 450, -3.6);
+    lanes[8] = new Lane(8, CAR, 1, 1, 450, 2.3);
+    lanes[9] = new Lane(9, CAR, 3, 1, 450, -1); //index, type, number of vehicles, len, spacing, speed
     lanes[10] = new Lane(10, SAFETY, 0, 0, 0, 0);   //this is the most bottom row
 }
 
@@ -285,7 +285,7 @@ function setUpLevel2() {
     lanes[6] = new Lane(6, CAR, 4, 1, 150, 2.9); //
     lanes[7] = new Lane(7, CAR, 2, 1, 150, -4.1);
     lanes[8] = new Lane(8, CAR, 2, 1, 150, 2.9);
-    lanes[9] = new Lane(9, CAR, 3, 1, 150, -1.5); //index, type, number of vehicles, len, spacing, speed
+    lanes[9] = new Lane(9, CAR, 3, 1, 250, -1.5); //index, type, number of vehicles, len, spacing, speed
     lanes[10] = new Lane(10, SAFETY, 0, 0, 0, 0);   //this is the most bottom row
 }
 function setUpLevel3() {

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a823142b-3eb7-4345-bf8e-0a98695c24be" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Frogger/frogger.js" afterPath="$PROJECT_DIR$/Frogger/frogger.js" />
-      <change beforePath="$PROJECT_DIR$/games.html" afterPath="$PROJECT_DIR$/games.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,14 +20,14 @@
       <file leaf-file-name="frogger.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="315">
+              <caret line="282" column="73" lean-forward="false" selection-start-line="282" selection-start-column="73" selection-end-line="282" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="games.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="282">
@@ -48,10 +47,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frogger/images/RoadImages/toRight/3.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
           </provider>
         </entry>
       </file>
@@ -183,11 +188,11 @@
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/ShortestPath_A/app.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/algorithms.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Frogger/frogger.js" />
         <option value="$PROJECT_DIR$/games.html" />
+        <option value="$PROJECT_DIR$/Frogger/frogger.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -382,12 +387,12 @@
       <workItem from="1533598678962" duration="5970000" />
       <workItem from="1533933627518" duration="470000" />
       <workItem from="1534108548857" duration="4029000" />
-      <workItem from="1534687447830" duration="3322000" />
+      <workItem from="1534687447830" duration="3964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161074000" />
+    <option name="totallyTimeSpent" value="161716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="737" extended-state="0" />
@@ -598,23 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="73" column="102" lean-forward="false" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="53" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frogger/arrowKeys/down.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -712,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
@@ -741,6 +721,31 @@
         <state relative-caret-position="282">
           <caret line="249" column="18" lean-forward="false" selection-start-line="249" selection-start-column="18" selection-end-line="249" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogger/frogger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="282" column="73" lean-forward="false" selection-start-line="282" selection-start-column="73" selection-end-line="282" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="73" column="102" lean-forward="false" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
