@@ -13,7 +13,7 @@ the power and joy coding can bring.
     * Canvas takes unique style versus localhost 
     * You Win! screen is off centered 
     * Screen freezes when get hit on mobile screen, create a restart button after you fix arrow keys   
-    * Add a loading... screen     
+* Add a loading... screen to Games    
 * Shortest path Randomize button reloads the entire page, have it just reload the Canvas.    
 * Frogger page style is overridden and therefore not consistent with the rest of the website.     
 * Playlist app barely works on mobile.    
