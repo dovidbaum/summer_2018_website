@@ -27,7 +27,8 @@ let sketchHolder;
 let positionInfo;
 
 function preload() {
-  //  frogImage = loadImage('Frogger/images/frog.png');
+
+    //  frogImage = loadImage('Frogger/images/frog.png');
     frogImage = loadImage('Frogger/images/frog2.png');
 
     // load road images
