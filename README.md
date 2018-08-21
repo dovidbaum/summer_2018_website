@@ -5,6 +5,21 @@ The goal of this website is to create a location where I can express some of the
 Many of these projects are inspired by coders online. These coders I've never met and probably will never meet
 but to whom I am forever grateful. It is these members of the open source community that gave me a love of coding and exposed me to
 the power and joy coding can bring.
+
+## Bugs and Improvements to be had 
+* Frogger needs to be fixed for mobile screens. 
+    * arrow keys only display correctly on localhost, on top right as oppose to bottom right  
+    * Canvas takes unique style versus localhost 
+    * You Win! screen is off centered 
+    * screen freezes when get jit on mobile screen, create a restart button after you fix arrow keys       
+* Shortest path Randomize button reloads the entire page, have it just reload the Canvas.    
+* Frogger page style is overridden and therefore not consistent with the rest of the website.     
+* Playlist app barely works on mobile.    
+* Playlist app needs to be taken to the next level as I get more familiar with with React.    
+    * List all songs in a playlist but in a scrollbar.    
+* Implement about page.  
+* Post personaldrawings on Drawing page.  
+
 ## Credit and Citations
 ### index Page
 Thank you to 'The Coding Train' for teaching me how to make the Steering Behavior affect.    
@@ -65,20 +80,7 @@ Dribbble: https://dribbble.com/mdbootstrap
 
 Contact:
 office@mdbootstrap.com
-
-## Bugs and Improvements to be had 
-* Frogger needs to be fixed for mobile screens. 
-    * arrow keys only display correctly on localhost, on top right as oppose to bottom right  
-    * Canvas takes unique style versus localhost 
-    * You Win! screen is off centered 
-    * screen freezes when get jit on mobile screen, create a restart button after you fix arrow keys       
-* Shortest path Randomize button reloads the entire page, have it just reload the Canvas.    
-* Frogger page style is overridden and therefore not consistent with the rest of the website.     
-* Playlist app barely works on mobile.    
-* Playlist app needs to be taken to the next level as I get more familiar with with React.    
-    * List all songs in a playlist but in a scrollbar.    
-* Implement about page.  
-* Post personaldrawings on Drawing page.       
+     
 
     
 
