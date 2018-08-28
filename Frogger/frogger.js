@@ -59,7 +59,6 @@ function setup() {
     sketchHolder = document.getElementById('sketch-holder');
     positionInfo = sketchHolder.getBoundingClientRect();
     pWidth = positionInfo.width;
-    console.log("parent's width: "+pWidth);
 
     canvas = createCanvas(pWidth, 550);
     canvas.id("froggerCanvas");
@@ -99,6 +98,8 @@ function setupGame() {
     pWidth = positionInfo.width;
     pHeight = positionInfo.height;
 
+    //remove loader
+    document.getElementById("loader").style.display = "none";
 
 }
 
@@ -112,19 +113,19 @@ function draw() {
             }
             let laneIndex = int(frog.y / grid);
             lanes[laneIndex].check(frog); //only check the lane in which the frog is in
-    /*        if (mouseIsPressed){
-                frog.mousePressed();
-            }
-            frog.adjustLocation();
-            frog.mouseReleased();
-            */
+            /*        if (mouseIsPressed){
+                        frog.mousePressed();
+                    }
+                    frog.adjustLocation();
+                    frog.mouseReleased();
+                    */
 
             frog.update();
             frog.show(); //draw the frog last
             if (laneIndex === 0) { //0 is the FINISH cause it's "backwards"
-                if(level == finalLevel){
+                if (level == finalLevel) {
                     gameState = YOUWIN;
-                }else {
+                } else {
                     gameState = GAMEOVERMENU;
                 }
             }
@@ -137,29 +138,29 @@ function draw() {
                 text('You Beat Level ' + level + "!", ((pWidth / 2)) - 150, (550 / 2) - 150);
                 replayLevel = createGameOverMenuButton("Replay Level", (((pWidth / 2)) - 50), ((550 / 2) - 100));
                 nextLevel = createGameOverMenuButton("Next Level", (((pWidth / 2)) - 50), ((550 / 2) - 50));
-                restartGame = createGameOverMenuButton("Restart Game", (((pWidth/ 2)) - 50), ((550 / 2)));
+                restartGame = createGameOverMenuButton("Restart Game", (((pWidth / 2)) - 50), ((550 / 2)));
 
             }
             replayLevel.mousePressed(replay);
             nextLevel.mousePressed(next);
             restartGame.mousePressed(restart);
-        } else if (gameState == YOUWIN){
+        } else if (gameState == YOUWIN) {
             if (!waitingForUser) { // ensures buttons are only created once
                 waitingForUser = true;
                 background('#222222');
                 fill("#21c4e6");
                 textSize(100);
-                text('You',((windowWidth / 2) / 2) - 100, (550 / 2) - 150);
-                text('Win!',((windowWidth / 2) / 2) - 100, (550 / 2));
-                replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) + 100),"replay");
-                restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2))+ 150,"restart");
+                text('You', ((windowWidth / 2) / 2) - 100, (550 / 2) - 150);
+                text('Win!', ((windowWidth / 2) / 2) - 100, (550 / 2));
+                replayLevel = createGameOverMenuButton("Replay Level", (((windowWidth / 2) / 2) - 50), ((550 / 2) + 100), "replay");
+                restartGame = createGameOverMenuButton("Restart Game", (((windowWidth / 2) / 2) - 50), ((550 / 2)) + 150, "restart");
             }
             replayLevel.mousePressed(replay);
             restartGame.mousePressed(restart);
         }
     }
-
 }
+
 
 
 
