@@ -15,54 +15,47 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
-
 </head>
-
 <body style="background-image: url('SteeringBehavior/images/blackboardBackground.jpg');background-size: 100% 160%;">
-
-<!--Main Navigation-->
 <header>
-
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#"><strong>Dovid Baum</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6"
-                    aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="games.html">Games</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="algorithms.html">Riddles & Algorithms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://playlists-spotify-backend.herokuapp.com/login"
-                           title="Takes a while to load because I am using Heroku's free backend server">Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Drawings</a>
-                    </li>
-                </ul>
-                <form class="form-inline">
-                    <div class="md-form mt-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                </form>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>Dovid Baum</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6"
+              aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="algorithms.html">Riddles & Algorithms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://playlists-spotify-backend.herokuapp.com/login"
+                 title="Takes a while to load because I am using Heroku's free backend server">Apps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Drawings</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <div class="md-form mt-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             </div>
+          </form>
         </div>
+      </div>
     </nav>
-    <!-- /Navbar -->
-
     <!-- Canvas -->
     <div class="container position-absolute" style="z-index: 1">
         <div class="row pt-3 mt-3">
@@ -71,127 +64,91 @@
             </div>
         </div>
     </div>
-    <!-- /Canvas -->
-
-
- <div id=loader>
+    <div id=loader>
 </header>
 <section style="background-image: url('SteeringBehavior/images/chalkAndBooks.png');background-size:
          cover;background-position: center; z-index: 0">
-    <div class="container">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <button onclick="myFunction()" data-toggle="collapse" href="#myDIV" id="about" type="button"
-                class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-question-sign"></span> ReadMe
-        </button>
-
-    </div>
-
-
+  <div class="container">
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <button onclick="myFunction()" data-toggle="collapse" href="#myDIV" id="about" type="button"
+            class="btn btn-info btn-lg btn3d"><span class="glyphicon glyphicon-question-sign"></span> ReadMe
+    </button>
+  </div>
 </section>
-<!--Main Navigation-->
-
 <!--Main Layout-->
 <main class="collapse" style="background-color:#262626; opacity: 0.8; display: none" id="myDIV">
-
-    <div class="container position-relative" style="z-index: 1">
-
-        <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-12 text-center" id="ReadMe">
-                <p align="left" style="color: #e6dbaf;">
-                    The goal of this website is to create a location where I can express some of the projects I enjoy
-                    working on outside of school and work. Please see
-                    <a href="https://github.com/dovidbaum/summer_2018_website/blob/master/README.txt" style="color:#96adb8">ReadMe on Github</a>
-                    for a full list of references and the entire source code.
-                <p align="left" style="color: #e6dbaf;">
-                    Many of the projects I work on are inspired by coders online.
-                    These coders I've never met and probably will never meet but to whom I am forever grateful.
-                    It is these members of the open source community that gave me a love of coding and exposed me to
-                    the power and joy coding can bring.
-                </p>
-                <p align="left" style="color: #e6dbaf;">
-                    Right now I am learning React, a javascript library. It will act as
-                    the framework to the playlist application I’m currently working on. Check out my progress on this and
-                    other applications by viewing the navbar.
-                </p>
-
-            </div>
-            <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
+  <div class="container position-relative" style="z-index: 1">
+    <div class="row">
+      <div class="col-12 text-center" id="ReadMe">
+        <p align="left" style="color: #e6dbaf;">
+           The goal of this website is to create a location where I can express
+           some of the projects I enjoy working on outside of school and work. Please see
+           <a href="https://github.com/dovidbaum/summer_2018_website/blob/master/README.txt"
+           style="color:#96adb8">ReadMe on Github</a>
+           for a full list of references and the entire source code.
+        <p align="left" style="color: #e6dbaf;">
+           Many of the projects I work on are inspired by coders online. These coders
+           I've never met and probably will never meet but to whom I am forever grateful.
+           It is these members of the open source community that gave me a love of coding
+           and exposed me to the power and joy coding can bring.
+         </p>
+        <p align="left" style="color: #e6dbaf;">
+           Right now I am learning React, a javascript library. It will act as
+          the framework to the playlist application I’m currently working on. Check
+          out my progress on this and other applications by viewing the navbar.
+         </p>
+      </div>
     </div>
-</main>
-<!--Main Layout-->
-
+  </div>
+ </main>
 <!-- Footer -->
 <footer class="page-footer font-small darken-3 " style="background-color: #262626">
-
-    <!-- Footer Links -->
-    <div class="container">
-
-        <!-- Grid row-->
-        <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-12 py-5">
-                <div class="mb-5 flex-center">
-
-                    <!-- Quora -->
-                    <a class="quora-ic">
-                        <a href="https://www.quora.com/profile/Dovid-Baum-1/questions" title="Quora">
-                        <i class="fa fa-quora fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                    </a>
-                    <!--Email-->
-                        <a class="email-ic mr-3">
-                            <a href=mailto:dovidbaum@gmail.com title="Email">
-                            <i class="fa fa-lg fa-envelope-o white-text mr-md-5 mr-3 fa-2x"></i>
-                        </a>
-                    </a>
-                    <!-- Google +-->
-                    <a class="git-ic">
-                        <a href="https://github.com/dovidbaum" title="Github">
-                            <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                        </a>
-                    </a>
-
-                    <!--Linkedin -->
-                    <a class="li-ic">
-                        <a href="https://www.linkedin.com/in/dovidbaum/" title="LinkedIn">
-                            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                        </a>
-                    </a>
-                    <!--Instagram-->
-                    <a class="ins-ic">
-                        <a href="https://www.instagram.com/dovidb/" title="Instagram">
-                            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                    </a>
-                </div>
-            </div>
-            <!-- Grid column -->
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+          <!-- Quora -->
+          <a class="quora-ic">
+            <a href="https://www.quora.com/profile/Dovid-Baum-1/questions" title="Quora">
+              <i class="fa fa-quora fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+          </a>
+          <!--Email-->
+          <a class="email-ic mr-3">
+            <a href=mailto:dovidbaum@gmail.com title="Email">
+              <i class="fa fa-lg fa-envelope-o white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </a>
+          <!-- GITHUB-->
+          <a class="git-ic">
+            <a href="https://github.com/dovidbaum" title="Github">
+              <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <a href="https://www.linkedin.com/in/dovidbaum/" title="LinkedIn">
+              <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <a href="https://www.instagram.com/dovidb/" title="Instagram">
+              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+          </a>
         </div>
-        <!-- Grid row-->
-
+      </div>
     </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Dovid Baum</a>
-    </div>
-    <!-- Copyright -->
-
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Dovid Baum</a>
+  </div>
 </footer>
 <!-- Footer -->
 </div>
-
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -229,8 +186,6 @@
 
         }
     }
-
-
 </script>
 <style>
     #ReadMe {
@@ -313,5 +268,4 @@
     }
 </style>
 </body>
-
 </html>
