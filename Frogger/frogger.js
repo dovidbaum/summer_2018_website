@@ -63,23 +63,11 @@ function setup() {
     canvas = createCanvas(pWidth, 550);
     canvas.id("froggerCanvas");
     canvas.parent('sketch-holder');
-   // gameoverContentContainer.parent('froggerCanvas');
-  //  gameoverContentContainer.id('gameoverContentContainer');
-
-    // Displays the image at point (0, height/2) at half size
-  //  image(left,600, 600);
 
     resetGame();
     setupGame();
-
-
 }
-
 function setupGame() {
-    //todo: create 5 levels, each time a user clicks next level it increments level and each
-    // time a user clicks previous level it decrements level. within this function I'll have if
-    // statements that take you to different levels. ie. if level == 2 Theb setupLevel2()
-
     if (level == 1) {
         setUpLevel1();
     } else if (level == 2) {
@@ -100,7 +88,6 @@ function setupGame() {
 
     //remove loader
     document.getElementById("loader").style.display = "none";
-
 }
 
 function draw() {
@@ -385,7 +372,3 @@ function moveRight() {
     document.getElementById('downArrow').style.color = "#222222";
     document.getElementById('leftArrow').style.color = "#222222";
 }
-
-
-
-

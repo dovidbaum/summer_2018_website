@@ -21,12 +21,10 @@ function preload() {
 function setup(){
     let canvas = createCanvas(350,900); // customize this so it fits screen nicely
     canvas.parent('text-holder'); //this attaches the canvas to a parent div
-    clear()  //uncomment this to make background clear
-  // background(51);
-
+    clear() // mack background clear
     showText();
-   // welcome();
-
+   //remove loader
+   document.getElementById("loader").style.display = "none";
 }
 
 function draw(){
@@ -81,10 +79,6 @@ function draw(){
         v.update();
         v.show();
     }
-
-
-
-
 }
 
 function showText(){
@@ -160,5 +154,3 @@ window.onresize = function() {
     height = h;
 };
 */
-
-
