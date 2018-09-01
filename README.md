@@ -1,25 +1,23 @@
 # <a href="http://terpconnect.umd.edu/~dbaum/summer_2018_website/index.html">Dovid's Summer 2018 Website </a>
 
-## About the site 
+## About the site
 The goal of this website is to create a location where I can express some of the projects I enjoy working on outside of school and work.
 Many of these projects are inspired by coders online. These coders I've never met and probably will never meet
 but to whom I am forever grateful. It is these members of the open source community that gave me a love of coding and exposed me to
 the power and joy coding can bring.
 
-## Bugs and Improvements to be had 
+## Bugs and Improvements to be had
 #### If you see any bugs please add to list or if you feel so inclined feel free to fix yourself!
-* Frogger needs to be fixed for mobile screens. 
+* Frogger needs to be improved for all mobile screens.
     * Arrow keys only display correctly on localhost, on top right as oppose to bottom right  
-    * Canvas takes unique style versus localhost 
-    * You Win! screen is off centered 
-    * Screen freezes when get hit on mobile screen, create a restart button after you fix arrow keys   
-* Add a loading... screen to Games    
+    * Canvas takes square style versus round on localhost
+    * You Win! screen is off centered
+    * Screen freezes when hit down on the bottom most row   
 * Shortest path Randomize button reloads the entire page, have it just reload the Canvas.    
 * Frogger page style is overridden and therefore not consistent with the rest of the website.     
-* Playlist app barely works on mobile.    
-* Playlist app needs to be taken to the next level as I get more familiar with with React.    
-    * List all songs in a playlist but in a scrollbar.    
-* Implement about and Drawings page.  
+* Playlist app needs to be visually appealing for  mobile.    
+* Playlist app - List all songs in a playlist but in a scrollbar.    
+* Implement 'about' and 'Drawings' page.  
 
 ## Credit and Citations
 ### index Page
@@ -31,7 +29,7 @@ Once again 'The Coding Train' for creating the original Frogger game
 A youtube video explaining how to setup the game can be found here: https://www.youtube.com/watch?v=giXV6xErw0Y  
 P5.js Framework: https://p5js.org/    
 Thank you to Animation From Tig for help on improving the Sprite and graphics: https://www.youtube.com/watch?v=PziMfEwXY6o  
-### Playlist App for Spotify 
+### Playlist App for Spotify
 I followed the tutorial found DevTips youtube channel: https://www.youtube.com/watch?v=rzk8n-4gMWs  
 Follow Data David who was apart of the tutorial: https://www.youtube.com/channel/UC0TQC6ZPNm23dU6ecc5x0Gg  
 And MPJ's channel on programming Fun Fun Function: https://www.youtube.com/funfunfunction  
@@ -81,17 +79,3 @@ Dribbble: https://dribbble.com/mdbootstrap
 
 Contact:
 office@mdbootstrap.com
-     
-
-    
-
-
-
-
-
-
-
-
-
-
-
