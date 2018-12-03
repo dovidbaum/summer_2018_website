@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Traveling Salesperson</title>
+    <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #939c9c">
+
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+            <header>
+
+                <!--Navbar-->
+                   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                       <div class="container">
+                           <a class="navbar-brand" href="index.html"><strong>Dovid Baum</strong></a>
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6"
+                                   aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
+                               <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
+                               <ul class="navbar-nav mr-auto">
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="games.html">Games</a>
+                                   </li>
+                                   <li class="nav-item active">
+                                       <a class="nav-link" href="#">Riddles & Algorithms<span class="sr-only">(current)</span></a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="https://playlists-spotify-backend.herokuapp.com/login"
+                                       title="Takes a while to load because I am using Heroku's free backend server">Apps</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#">Profile</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#">Drawings</a>
+                                   </li>
+                               </ul>
+                               <form class="form-inline">
+                                   <div class="md-form mt-0">
+                                       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                   </nav>
+                   <!-- /Navbar -->
+                                <div class="view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-color: #ff96ca;">
+                                    <div class="full-bg-img">
+                                        <div class="container flex-center">
+                                            <div class="row pt-5 mt-3">
+                                                <div class="col-12">
+                                                    <h1 class="well well-sm col-10" style="color: #0e4377" >Traveling Salesperson</h1>
+                                                    <div id="travelingSalesperson-holder" class="well well-sm col-10"  ></div>
+                                                        <div id="button-holder" class="col-2" >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+            </header>
+            <!--Main Navigation-->
+
+            <!--Main Layout-->
+            <main style="background-color: #939c9c">
+
+                <div class="container">
+
+                    <!--Grid row-->
+                    <div class="row py-5 mt-4">
+
+                        <!--Grid column-->
+                        <div class="col-md-12 text-center">
+                            <h3>What the heck is happening?</h3>
+
+
+
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                </div>
+
+            </main>
+            <!--Main Layout-->
+            <!-- Footer -->
+            <footer class="page-footer font-small darken-3 " style="background-color: #262626">
+
+                <!-- Footer Links -->
+                <div class="container">
+
+                    <!-- Grid row-->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 py-5">
+                            <div class="mb-5 flex-center">
+
+                                <!-- Quora -->
+                                <a class="quora-ic">
+                                    <a href="https://www.quora.com/profile/Dovid-Baum-1/questions" title="Quora">
+                                    <i class="fa fa-quora fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+                                </a>
+                                <!--Email-->
+                                    <a class="email-ic mr-3">
+                                        <a href=mailto:dovidbaum@gmail.com title="Email">
+                                        <i class="fa fa-lg fa-envelope-o white-text mr-md-5 mr-3 fa-2x"></i>
+                                    </a>
+                                </a>
+                                <!-- Google +-->
+                                <a class="git-ic">
+                                    <a href="https://github.com/dovidbaum" title="Github">
+                                        <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                                    </a>
+                                </a>
+
+                                <!--Linkedin -->
+                                <a class="li-ic">
+                                    <a href="https://www.linkedin.com/in/dovidbaum/" title="LinkedIn">
+                                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                                    </a>
+                                </a>
+                                <!--Instagram-->
+                                <a class="ins-ic">
+                                    <a href="https://www.instagram.com/dovidb/" title="Instagram">
+                                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Dovid Baum</a>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- my files-->
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+     <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+     <script language="javascript" type="text/javascript" src="travelingSalesperson/app.js"></script>
+
+</body>
+
+</html>
